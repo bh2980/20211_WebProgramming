@@ -9,6 +9,7 @@
   - index.html : HTML 참고 사이트로 이동하는 url을 넣은 html 사이트 코드
       a 태그에서 href를 통해 사이트 지정.
       코드상에는 없지만 한 페이지에서 base태그를 이용하여 특수한 위치 혹은 홈페이지로의 이동하도록 코딩할 수도 있다.
+      (id로 한 페이지 내 이동도 가능)
       
   - index2.html : 표 만들기
       style 코드를 통해 background, width 지정 가능
