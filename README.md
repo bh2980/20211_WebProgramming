@@ -4,7 +4,7 @@
 참고 : [스파르타 코딩 클럽](https://github.com/bh2980/SpartaCordeiClub/)
 
 
-### [210313 : HTML 기초](https://github.com/bh2980/20211_WebProgramming.git) : 과제1
+### [[210313 : HTML 기초](https://github.com/bh2980/20211_WebProgramming.git)] : 과제1
 ```
   - index.html : HTML 참고 사이트로 이동하는 url을 넣은 html 사이트 코드
       a 태그에서 href를 통해 사이트 지정.
