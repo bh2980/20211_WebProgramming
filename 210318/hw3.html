@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h1>개인 정보 입력</h1></legend>
+            아 이 디:
+            <input type="text"><button type="button">ID중복검사</button>
+            <p/>
+            생년월일:
+            <input type="text" placeholder="mm/dd/yyyy">
+            <p/>
+            성 별:
+            <input type="radio" name="sex" value="male">남자
+            <input type="radio" name="sex" value="female">여자
+            <p/>
+            E-mail: <input type="text">
+            <p/>
+            메일수신:
+            <input type="radio" name="sex" value="allow">수신동의
+            <input type="radio" name="sex" value="disallow">수신거부
+            <p/>
+            핸드폰:
+            <select name="number_option">
+                <option value="1" selected>010</option>
+                <option value="2">011</option>
+                <option value="3">012</option>
+                <option value="4">013</option>
+            </select>
+            -<input type="text">-<input type="text">
+            <p/>
+            직업:
+            <select name="job">
+                <option value="1" selected>학생</option>
+                <option value="2">회사원</option>
+                <option value="3">가정주부</option>
+                <option value="4">백수</option>
+            </select>
+            <p/>
+            취미:
+            <input type="checkbox" name="hobby">쇼핑
+            <input type="checkbox" name="hobby">인터넷
+            <input type="checkbox" name="hobby">음악감상
+            <input type="checkbox" name="hobby">독서
+            <input type="checkbox" name="hobby">스포츠
+            <p/>
+            자기소개:
+            <textarea rows="5" cols="50"></textarea>
+        </fieldset>
+        <p/>
+        <button type="submit">등록</buttoon>
+        <button type="reset">초기화</button>
+    </form>
+</body>
+</html>
