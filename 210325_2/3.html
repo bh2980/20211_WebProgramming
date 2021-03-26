@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var Body = {
+
+            setColor: function(color){
+                document.querySelector('body').style.color = color;
+            },
+
+            setBackgroundColor: function(color){
+                document.querySelector('body').style.backgroundColor = color;
+            }
+        }
+
+        var Links = {
+            setColor : function(color){
+                var alist = document.querySelectorAll('a');
+    
+                var i=0;
+
+                while(i<alist.length){
+                    alist[i].style.color = color;
+                    i++;
+                }
+            }
+        }
+
+        /*
+        함수로 만든 코드
+
+        function setLinkColor(color){
+            var alist = document.querySelectorAll('a');
+    
+            var i=0;
+
+            while(i<alist.length){
+                alist[i].style.color = color;
+                i++;
+            }
+        }
+        */
+
+        function nightDayHandler(self){
+            //자바 스크립트에서 변수 작성
+    
+            if(self.value == 'night'){
+                Body.setColor('white');
+                Body.setBackgroundColor('black');
+                self.value = 'day';
+
+                //setLinkColor('pink');
+                Links.setColor('pink');
+            }
+            else{
+                Body.setColor('black');
+                Body.setBackgroundColor('white');
+                self.value = 'night'
+
+                //setLinkColor('blue');
+                Links.setColor('blue');
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <p><h1>JavaSripts</h1>
+        <input type="button" value="night" onclick="
+        //자바스크립트 위치
+        nightDayHandler(this); //자기자신
+        ">
+        From Wikipedia, the free encyclopedia
+        Jump to navigationJump to search
+        Not to be confused with JScript, Java (programming language), or Javanese script.
+        For the uses of JavaScript on Wikipedia, see Wikipedia:JavaScript.
+        JavaScript
+        Paradigm	event-driven, functional, imperative
+        Designed by	Brendan Eich initially, plus other key contributors to the ECMAScript specification
+        First appeared	December 4, 1995; 25 years ago[1]
+        Stable release	
+        ECMAScript 2020[2] / June 2020; 9 months ago
+        Preview release	
+        ECMAScript 2021
+        Typing discipline	Dynamic, duck
+        Filename extensions	
+        .js.cjs.mjs[3]
+        Major implementations
+        V8, JavaScriptCore, SpiderMonkey, Chakra
+        Influenced by
+        Java,[4][5] Scheme,[5] AWK,[6] HyperTalk[7]
+        Influenced
+        TypeScript, CoffeeScript, AssemblyScript, ActionScript, Dart, Objective-J, Opa, Haxe
+         JavaScript at Wikibooks
+        Part of a series on
+        JavaScript
+        Language
+        History
+        Features
+        Syntax
+        ECMAScript
+        Transpilers
+        Libraries
+        JavaScript libraries
+        Frameworks
+        Ajax frameworks
+        Unit testing frameworks
+        Implementations
+        JavaScript engine
+        Server side
+        See also
+        HTMLJSONYAMLXMLHttpRequestASM.JSWASMWebGLWebGPU
+        vte
+        JavaScript (/ˈdʒɑːvəˌskrɪpt/),[8] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[9] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+        
+        Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[10] JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior,[11] and all major web browsers have a dedicated JavaScript engine to execute it.
+        
+        As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
+        
+        The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.
+        
+        JavaScript engines were originally used only in web browsers, but they are now core components of other runtime systems, such as Node.js and Deno. These systems are used to build servers and are also integrated into frameworks, such as Electron and Cordova, for creating a variety of applications.
+        
+        Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.</p>
+</body>
+</html>

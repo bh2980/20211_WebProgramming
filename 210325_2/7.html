@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--객체 obj-->
+    <script>
+        var cowrkers = {
+            "programmer" : "bh2980",
+            "designer" : "bh298",
+        }
+
+        document.write("programmer : "+cowrkers.programmer + "<br>");
+        document.write("designer : "+cowrkers.designer + "<br>");
+
+        //추가
+        cowrkers.user = "bhwk2980";
+        document.write("user : "+cowrkers.user + "<br>");
+        
+        //띄어쓰기 있는 문항 추가
+        cowrkers["data scientist"] = "taeho"
+        document.write("data scientist : "+ cowrkers["data scientist"] + "<br>");
+    </script>
+
+    <h2>Iterate</h2>
+
+    <script>
+
+        
+        for(var key in cowrkers){
+            document.write(key + ' : ' + cowrkers[key] + '<br>');
+        }
+
+        document.write('<br>');
+
+        //객체에 함수 넣기
+        cowrkers.showAll = function() {
+            for(var key in this){
+                document.write(key + ' : ' + this[key] + '<br>');
+            }
+        }
+
+        cowrkers.showAll();
+        //showAll도 cowrkers내에 포함되기 때문에 표시
+    </script>
+</body>
+</html>
