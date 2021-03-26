@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:yellow;
+            text-shadow: 3px 3px purple;
+            text-align: center;
+        }
+        div.menubox{
+            background-color:lightgray;
+            width:180px;
+            height:133px;
+            margin:5px;
+        }
+        div.menubox:hover{
+            box-shadow: midnightblue 2px 2px 5px 0px;
+        }
+        img.icon{
+            float:left;
+            width:25px;
+            margin:5px;
+        }
+        img.webview{
+            width:170px;
+            margin-left:5px;
+        }
+        div.title{
+            margin:0px;
+            height:35px;
+        }
+        p.name{
+            padding:7px;
+            margin:0px;
+            height:25px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 190px 190px 1fr;
+        }
+    </style>
+</head>
+<body>
+    <h1>Most Visited Pages</h1>
+    <hr>
+    <!--웹페이지를 직접 작게 로딩하는 방법은 없을까? = iframe은 막힘-->
+    <!--일단은 이미지로-->
+    <div id="grid">
+        <div class="menubox" onClick="window.open('https://www.naver.com')">
+            <div class="title">
+                <img class="icon" src="naver_icon.png">
+                <p class="name">NAVER</p>
+            </div>
+            <img class="webview" src="naver.png">
+        </div>
+        <div class="menubox" onClick="window.open('https://www.google.com')">
+            <div class="title">
+                <img class="icon" src="google_icon.png">
+                <p class="name">Google</p>
+            </div>
+            <img class="webview" src="google.png">
+        </div>
+        <div class="menubox" onClick="window.open('https://lms.knu.ac.kr/ilos/main/main_form.acl')">
+            <div class="title">
+                <img class="icon" src="lms_icon.png">
+                <p class="name">LMS</p>
+            </div>
+            <img class="webview" src="lms.png">
+        </div>
+    </div>
+</body>
+</html>
