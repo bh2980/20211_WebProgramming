@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height: 100px;
+        }
+        #round1{
+            float:left;
+            background-color: pink;
+            border-top-left-radius: 100%;
+            animation:color 1s infinite alternate;
+        }
+        #round2{
+            margin-left:100px;
+            background-color: beige;
+            border-top-right-radius: 100%;
+            animation:color2 1s infinite alternate;
+        }
+        #round3{
+            float:left;
+            background-color: red;
+            border-bottom-left-radius: 100%;
+            animation:color3 1s infinite alternate;
+        }
+        #round4{
+            margin-left:100px;
+            background-color: purple;
+            border-bottom-right-radius: 100%;
+            animation:color4 1s infinite alternate;
+        }
+        @keyframes color {
+            0%{background:pink}
+            100%{background:black}
+        }
+        @keyframes color2 {
+            100%{background:green}
+        }
+        @keyframes color3 {
+            100%{background:blue}
+        }
+        @keyframes color4 {
+            100%{background:red}
+        }
+    </style>
+</head>
+<body>
+    <div id="round1"></div>
+    <div id="round2"></div>
+    <div id="round3"></div>
+    <div id="round4"></div>
+</body>
+</html>

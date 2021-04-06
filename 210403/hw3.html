@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #lion{
+            margin:300px;
+            width:200px;
+            animation: rotate 1s linear infinite normal;
+        }
+        @keyframes rotate{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+        #lion2{
+            margin:300px;
+            width:200px;
+            animation: rotate2 1s linear infinite alternate;
+        }
+        @keyframes rotate2{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(90deg);}
+        }
+    </style>
+</head>
+<body>
+    <image id="lion" src="https://newsimg.sedaily.com/2019/01/23/1VE5F3W5WP_18.png"></image>
+    <image id="lion2" src="https://newsimg.sedaily.com/2019/01/23/1VE5F3W5WP_18.png"></image>
+</body>
+</html>
