@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 90px;
+            height: 50px;
+        }
+        #colortable{
+            display: grid;
+            grid-template-rows: 60px 60px 60px;
+        }
+        #line1{
+            display:grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        }
+        #line2{
+            display:grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        }
+        #line3{
+            display:grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>색 이름과 색</h1>
+    <hr>
+    <!--div태그별로 id를 설정해서 함수를 통해 반복문을 id를 올려가면서 행렬 값을 배경색으로 지정-->
+    <div id="colortable">
+        <div id="line1">
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+            <div id="div4"></div>
+            <div id="div5"></div>
+            <div id="div6"></div>
+        </div>
+        <div id="line2">
+            <div id="div7"></div>
+            <div id="div8"></div>
+            <div id="div9"></div>
+            <div id="div10"></div>
+            <div id="div11"></div>
+            <div id="div12"></div>
+        </div>
+        <div id="line3">
+            <div id="div13"></div>
+            <div id="div14"></div>
+            <div id="div15"></div>
+            <div id="div16"></div>
+            <div id="div17"></div>
+        </div>
+    </div>
+
+    <script>
+        var colorName = ["maroon", "red", "orange", "yellow", "olive", "purple", "fuchsia", "white", "lime", "green", "navy", "blue", "aqua", "teal", "black", "silver", "gray"]
+        
+        function backgroundColor(id, color){
+            document.getElementById(id).style.backgroundColor = color;
+            document.getElementById(id).innerHTML = color;
+            document.getElementById(id).style.padding = "10px 0px 0px 10px"
+
+        }
+
+        for(i=1; i<=17; i++){
+            backgroundColor("div"+i, colorName[i-1]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var data = [];
+        for (var i = 0; i < 9; ++i) {
+            data[i] = [(i+1) * 1, (i+1)*2, (i+1)*3, (i+1)*4, (i+1)*5, (i+1)*6, (i+1)*7, (i+1)*8, (i+1)*9];
+        }
+
+        function printData() {
+            for (var x = 0; x < data.length; x++) {
+                for (var y = 0; y < data[x].length; y++) {
+                    document.write(data[x][y] + " ");
+                }
+                document.write("<p/>");
+            }
+            document.write("<a href='hw2.html'>돌아가기</a>");
+        }
+
+    </script>
+    <button type="button" onclick="printData()">전체 배열 데이터 보기</button>
+</body>
+
+</html>

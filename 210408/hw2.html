@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="my-table" border="1px">
+        <th>1단</th>
+        <th>2단</th>
+        <th>3단</th>
+        <th>4단</th>
+        <th>5단</th>
+        <th>6단</th>
+        <th>7단</th>
+        <th>8단</th>
+        <th>9단</th>
+    </table>
+
+    <script>
+        //2차원 배열 데이터
+        var data = [];
+
+        for (var i = 0; i < 9; ++i) {
+            data[i] = [(i+1) * 1, (i+1)*2, (i+1)*3, (i+1)*4, (i+1)*5, (i+1)*6, (i+1)*7, (i+1)*8, (i+1)*9];
+        }
+
+        //배열 데이터 출력 함수
+        function printData() {
+            for (var x = 0; x < data.length; x++) {
+                for (var y = 0; y < data[x].length; y++) {
+                    document.write(data[x][y] + " ");
+                }
+                document.write("<br>");
+            }
+            document.write("</p><a href='hw2.html'>돌아가기</a>");
+        }
+
+        //구구단 1행 테이블 생성 함수
+        function addRow(tableID, dan) {
+            // Get a reference to the table
+            let tableRef = document.getElementById(tableID);
+
+            // Insert a row at the end of the table
+            let newRow = tableRef.insertRow(-1);
+
+            // Insert a cell in the row at index 0
+            let newCell = newRow.insertCell(-1);
+            let newCell2 = newRow.insertCell(-1);
+            let newCell3 = newRow.insertCell(-1);
+            let newCell4 = newRow.insertCell(-1);
+            let newCell5 = newRow.insertCell(-1);
+            let newCell6 = newRow.insertCell(-1);
+            let newCell7 = newRow.insertCell(-1);
+            let newCell8 = newRow.insertCell(-1);
+            let newCell9 = newRow.insertCell(-1);
+
+            // Append a text node to the cell
+            let newText = document.createTextNode(dan + "*" + 1 + "=" + dan * 1);
+            let newText2 = document.createTextNode(dan + "*" + 2 + "=" + dan * 2);
+            let newText3 = document.createTextNode(dan + "*" + 3 + "=" + dan * 3);
+            let newText4 = document.createTextNode(dan + "*" + 4 + "=" + dan * 4);
+            let newText5 = document.createTextNode(dan + "*" + 5 + "=" + dan * 5);
+            let newText6 = document.createTextNode(dan + "*" + 6 + "=" + dan * 6);
+            let newText7 = document.createTextNode(dan + "*" + 7 + "=" + dan * 7);
+            let newText8 = document.createTextNode(dan + "*" + 8 + "=" + dan * 8);
+            let newText9 = document.createTextNode(dan + "*" + 9 + "=" + dan * 9);
+
+            newCell.appendChild(newText);
+            newCell2.appendChild(newText2);
+            newCell3.appendChild(newText3);
+            newCell4.appendChild(newText4);
+            newCell5.appendChild(newText5);
+            newCell6.appendChild(newText6);
+            newCell7.appendChild(newText7);
+            newCell8.appendChild(newText8);
+            newCell9.appendChild(newText9);
+        }
+
+        //9개의 행(단) 생성
+        for (var i = 0; i < 9; i++) {
+            addRow('my-table', i + 1);
+        }
+    </script>
+
+    </p>
+    <button onclick="printData()">구구단 배열 데이터 보기</button>
+</body>
+
+</html>
