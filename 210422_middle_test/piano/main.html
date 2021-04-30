@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keystruments</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Rokkitt:wght@400&display=swap');
+        body {
+            margin: 0px;
+            background-color: black;
+            color: white;
+            /* 여기부터 */
+            /* -ms-overflow-style: none; */
+        }
+        
+         ::-webkit-scrollbar {
+            display: none;
+        }
+        /* 여기까지 스크롤바 없애는 코드 복사해온 것 */
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .title {
+            color: white;
+            font-size: 6em;
+            font-family: 'Nanum Myeongjo', serif;
+            margin: 0px;
+        }
+        
+        .description {
+            font-family: 'Rokkitt', serif;
+            font-size: 28px;
+            margin: 0px;
+        }
+        
+        .keystrument {
+            width: 100%;
+            min-width: 1550px;
+        }
+        
+        .keystrument_video {
+            width: 100%;
+            min-width: 1550px;
+            float: left;
+        }
+        
+        .keystrument_title {
+            position: absolute;
+            width: 50%;
+            top: 500px;
+            left: 150px
+        }
+        
+        .keiano {
+            width: 100%;
+            min-width: 1550px;
+        }
+        
+        .piano_video {
+            width: 100%;
+            min-width: 1550px;
+            float: left;
+        }
+        
+        .keiano_title {
+            position: absolute;
+            width: 50%;
+            text-align: end;
+            top: 1400px;
+            right: 150px;
+        }
+        
+        .keitar {
+            width: 100%;
+            min-width: 1550px;
+        }
+        
+        .guitar_video {
+            width: 100%;
+            min-width: 1550px;
+            float: left;
+        }
+        
+        .keitar_title {
+            position: absolute;
+            width: 50%;
+            top: 2400px;
+            left: 150px;
+        }
+        
+        .keirum {
+            width: 100%;
+            min-width: 1550px;
+        }
+        
+        .drum_video {
+            width: 100%;
+            min-width: 1550px;
+            float: left;
+        }
+        
+        .keirum_title {
+            position: absolute;
+            width: 50%;
+            text-align: end;
+            bottom: -2500px;
+            right: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="keystrument">
+        <video autoplay muted loop class="keystrument_video">
+            <source src="./video/keystrument.mp4" type="video/mp4">
+        </video>
+        <div class="keystrument_title">
+            <p class="title">Keystrument.</p>
+            <p class="description">
+                playing your music with your keyboard.
+            </p>
+        </div>
+    </div>
+    <div class="keiano">
+        <video autoplay muted loop class="piano_video">
+            <source src="./video/piano.mp4" type="video/mp4">
+        </video>
+        <div class="keiano_title">
+            <a class="title" href="keyboard_layout.html">Keiano.</a>
+            <p class="description">
+                beatiful melody in smooth typing.
+            </p>
+        </div>
+    </div>
+    <div class="keitar">
+        <video autoplay muted loop class="guitar_video">
+            <source src="./video/guitar.mp4" type="video/mp4">
+        </video>
+        <div class="keitar_title">
+            <a class="title" href="keyboard_layout.html">Keitar.</a>
+            <p class="description">
+                the string by another finger.
+            </p>
+        </div>
+    </div>
+    <div class="keirum">
+        <video autoplay muted loop class="drum_video">
+            <source src="./video/drum.mp4" type="video/mp4">
+        </video>
+        <div class="keirum_title">
+            <a class="title" href="keyboard_layout.html">Keirum.</a>
+            <p class="description">
+                beats by Dr.keyboard.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
