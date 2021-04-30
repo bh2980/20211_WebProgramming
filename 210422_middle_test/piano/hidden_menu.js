@@ -1,6 +1,7 @@
 var animation = [];
 animation[0] = 'Glow';
-animation[1] = 'Circle';
+animation[1] = 'None'
+animation[2] = 'Circle';
 
 j = 0;
 
@@ -12,7 +13,7 @@ function changeEffect() {
 
     if (j == animation.length) j = 0;
 
-    light(71);
+    light(72);
 }
 
 k = 0;
@@ -23,11 +24,11 @@ function changeColor() {
     document.getElementById('color_subscrip').innerHTML = color_list_for_sub[k];
 }
 
-var layout = [];
+// var layout = [];
 
-layout[0] = 1;
-layout[1] = 0; //arrow
-layout[2] = 0; //numpad
+// layout[0] = 1;
+// layout[1] = 0; //arrow
+// layout[2] = 0; //numpad
 
 //menu check 확인 후 text 색 변경 + 레이아웃 불러오기
 function check(id) {
@@ -97,7 +98,6 @@ function changelayout(layout_num) {
 
     switch (layout_num) {
         case 0: //all
-            console.log('all');
             keyboard.classList.remove('keyboard_layout_all');
             keyboard.classList.remove('keyboard_layout_one');
             keyboard.classList.remove('keyboard_layout_main_other');
@@ -106,7 +106,6 @@ function changelayout(layout_num) {
 
             break;
         case 1: //one
-            console.log('one');
             keyboard.classList.remove('keyboard_layout_all');
             keyboard.classList.remove('keyboard_layout_one');
             keyboard.classList.remove('keyboard_layout_main_other');
@@ -115,7 +114,6 @@ function changelayout(layout_num) {
             keyboard.classList.add('keyboard_layout_one');
             break;
         case 2: //others
-            console.log('others');
             keyboard.classList.remove('keyboard_layout_all');
             keyboard.classList.remove('keyboard_layout_one');
             keyboard.classList.remove('keyboard_layout_main_other');
@@ -124,7 +122,6 @@ function changelayout(layout_num) {
             keyboard.classList.add('keyboard_layout_others');
             break;
         case 3: //main_others
-            console.log('main_others');
             keyboard.classList.remove('keyboard_layout_all');
             keyboard.classList.remove('keyboard_layout_one');
             keyboard.classList.remove('keyboard_layout_main_other');
@@ -135,19 +132,19 @@ function changelayout(layout_num) {
     }
 }
 
-i = 0;
+menuactive = 0;
 
 function menu_click() {
     var menu_btn = document.getElementById('menu_button');
-    var devinfo = document.getElementById('devinfo')
+    var devinfo = document.getElementById('devinfo');
     var hidden = document.getElementById('hidden_menu');
 
-    if (!i) {
-        menu_btn.style.transform = 'scale(10)';
+    if (!menuactive) {
+        menu_btn.style.transform = 'scale(7)';
         devinfo.style.backgroundColor = color_list[k][Math.floor(Math.random() * color_list[k].length)];
-        devinfo.style.transform = 'scale(5)';
+        devinfo.style.transform = 'scale(6)';
         devinfo.style.opacity = 0.9;
-        i++;
+        menuactive++;
         setTimeout(function() {
             hidden.style.display = 'block';
         }, 100);
@@ -157,9 +154,6 @@ function menu_click() {
         setTimeout(function() {
             hidden.style.display = 'none';
         }, 50);
-        setTimeout(function() {
-            devinfo.style.opacity = 0;
-        }, 200);
-        i--;
+        menuactive--;
     }
 }

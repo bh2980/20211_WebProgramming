@@ -8,17 +8,17 @@
     <title>Keystruments</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link href="./keyboard.css" rel="stylesheet">
+    <link href="./keitar.css" rel="stylesheet">
     <link href="./hidden_menu.css" rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script src="./jquery-3.6.0.min.js"></script>
-    <script src="./keyboard.js"></script>
+    <script src="./keitar.js"></script>
     <script src="./hidden_menu.js"></script>
     <style>
          :root {
             --animation_name: Circle;
-            --effect_color: rgb(249, 56, 34);
+            --effect_color: rgb(0, 177, 210);
         }
         
         body {
@@ -74,25 +74,27 @@
         
         #before {
             width: 100px;
-            height: 60px;
+            height: 43px;
             background-color: rgb(0, 0, 0, 0.5);
             border-radius: 10px;
             position: absolute;
             top: -145px;
             right: 200px;
             color: white;
-            font-size: 50px;
+            font-size: 20px;
+            padding-top: 17px;
         }
         
         #after {
             width: 100px;
-            height: 60px;
+            height: 43px;
             border-radius: 10px;
             background-color: rgb(0, 0, 0, 0.5);
             position: absolute;
             top: -145px;
             right: 30px;
-            font-size: 50px;
+            padding-top: 17px;
+            font-size: 20px;
             z-index: 210;
         }
         
@@ -138,17 +140,6 @@
             display: none;
         }
         
-        .sub {
-            position: relative;
-            right: 100px;
-            top: -30px;
-            width: 100px;
-            font-size: 20px;
-            z-index: 204;
-            background-color: rgb(61, 61, 61);
-            display: none;
-        }
-        
         .octave0 {
             z-index: 203;
             top: 60px
@@ -182,8 +173,40 @@
             top: 270px
         }
         
+        .octave8 {
+            top: 300px
+        }
+        
+        .octave9 {
+            top: 330px
+        }
+        
+        .octave10 {
+            top: 360px
+        }
+        
+        .octave11 {
+            top: 390px
+        }
+        
+        .octave12 {
+            top: 420px
+        }
+        
+        .octave13 {
+            top: 450px
+        }
+        
+        .octave14 {
+            top: 480px
+        }
+        
+        .octave15 {
+            top: 510px
+        }
+        
         .none {
-            top: 300px;
+            top: 540px;
         }
         
         #after:hover>ol>li {
@@ -243,132 +266,53 @@
                     <div id='after'>
                         <div id='choose' style="z-index: 205;"></div>
                         <ol class="dropdown">
-                            <li class="main octave0">
-                                <a>C<sub>0</sub></a>
-                                <ul>
-                                    <li id='a0' class="sub">a0</li>
-                                    <li id='a0#' class="sub">a0#</li>
-                                    <li id='b0' class="sub">b0</li>
-                                </ul>
+                            <li id="A2A3" class="main octave0">
+                                <a>A2A3</a>
                             </li>
-                            <li class="main octave1">
-                                <a>C<sub>1</sub></a>
-                                <ul>
-                                    <li id='c1' class="sub">c1</li>
-                                    <li id='c1#' class="sub">c1#</li>
-                                    <li id='d1' class="sub">d1</li>
-                                    <li id='d1#' class="sub">d1#</li>
-                                    <li id='e1' class="sub">e1</li>
-                                    <li id='f1' class="sub">f1</li>
-                                    <li id='f1#' class="sub">f1#</li>
-                                    <li id='g1' class="sub">g1</li>
-                                    <li id='g1#' class="sub">g1#</li>
-                                    <li id='a1' class="sub">a1</li>
-                                    <li id='a1#' class="sub">a1#</li>
-                                    <li id='b1' class="sub">b1</li>
-                                </ul>
+                            <li id='A3' class="main octave1">
+                                <a>A3</a>
                             </li>
-                            <li class="main octave2">
-                                <a>C<sub>2</sub></a>
-                                <ul>
-                                    <li id='c2' class="sub">c2</li>
-                                    <li id='c2#' class="sub">c2#</li>
-                                    <li id='d2' class="sub">d2</li>
-                                    <li id='d2#' class="sub">d2#</li>
-                                    <li id='e2' class="sub">e2</li>
-                                    <li id='f2' class="sub">f2</li>
-                                    <li id='f2#' class="sub">f2#</li>
-                                    <li id='g2' class="sub">g2</li>
-                                    <li id='g2#' class="sub">g2#</li>
-                                    <li id='a2' class="sub">a2</li>
-                                    <li id='a2#' class="sub">a2#</li>
-                                    <li id='b2' class="sub">b2</li>
-                                </ul>
+                            <li id='B2' class="main octave2">
+                                <a>B2</a>
                             </li>
-                            <li class="main octave3">
-                                <a>C<sub>3</sub></a>
-                                <ul>
-                                    <li id='c3' class="sub">c3</li>
-                                    <li id='c3#' class="sub">c3#</li>
-                                    <li id='d3' class="sub">d3</li>
-                                    <li id='d3#' class="sub">d3#</li>
-                                    <li id='e3' class="sub">e3</li>
-                                    <li id='f3' class="sub">f3</li>
-                                    <li id='f3#' class="sub">f3#</li>
-                                    <li id='g3' class="sub">g3</li>
-                                    <li id='g3#' class="sub">g3#</li>
-                                    <li id='a3' class="sub">a3</li>
-                                    <li id='a3#' class="sub">a3#</li>
-                                    <li id='b3' class="sub">b3</li>
-                                </ul>
+                            <li id='B3' class="main octave3">
+                                <a>B3</a>
                             </li>
-                            <li class="main octave4">
-                                <a>C<sub>4</sub></a>
-                                <ul>
-                                    <li id='c4' class="sub">c4</li>
-                                    <li id='c4#' class="sub">c4#</li>
-                                    <li id='d4' class="sub">d4</li>
-                                    <li id='d4#' class="sub">d4#</li>
-                                    <li id='e4' class="sub">e4</li>
-                                    <li id='f4' class="sub">f4</li>
-                                    <li id='f4#' class="sub">f4#</li>
-                                    <li id='g4' class="sub">g4</li>
-                                    <li id='g4#' class="sub">g4#</li>
-                                    <li id='a4' class="sub">a4</li>
-                                    <li id='a4#' class="sub">a4#</li>
-                                    <li id='b4' class="sub">b4</li>
-                                </ul>
+                            <li id='B3B4' class="main octave4">
+                                <a>B3B4</a>
                             </li>
-                            <li class="main octave5">
-                                <a>C<sub>5</sub></a>
-                                <ul>
-                                    <li id='c5' class="sub">c5</li>
-                                    <li id='c5#' class="sub">c5#</li>
-                                    <li id='d5' class="sub">d5</li>
-                                    <li id='d5#' class="sub">d5#</li>
-                                    <li id='e5' class="sub">e5</li>
-                                    <li id='f5' class="sub">f5</li>
-                                    <li id='f5#' class="sub">f5#</li>
-                                    <li id='g5' class="sub">g5</li>
-                                    <li id='g5#' class="sub">g5#</li>
-                                    <li id='a5' class="sub">a5</li>
-                                    <li id='a5#' class="sub">a5#</li>
-                                    <li id='b5' class="sub">b5</li>
-                                </ul>
+                            <li id='B4' class="main octave5">
+                                <a>B4</a>
                             </li>
-                            <li class="main octave6">
-                                <a>C<sub>6</sub></a>
-                                <ul>
-                                    <li id='c6' class="sub">c6</li>
-                                    <li id='c6#' class="sub">c6#</li>
-                                    <li id='d6' class="sub">d6</li>
-                                    <li id='d6#' class="sub">d6#</li>
-                                    <li id='e6' class="sub">e6</li>
-                                    <li id='f6' class="sub">f6</li>
-                                    <li id='f6#' class="sub">f6#</li>
-                                    <li id='g6' class="sub">g6</li>
-                                    <li id='g6#' class="sub">g6#</li>
-                                    <li id='a6' class="sub">a6</li>
-                                    <li id='a6#' class="sub">a6#</li>
-                                    <li id='b6' class="sub">b6</li>
-                                </ul>
+                            <li id='C3' class="main octave6">
+                                <a>C#3</a>
                             </li>
-                            <li class="main octave7">
-                                <a>C<sub>7</sub></a>
-                                <ul>
-                                    <li id='c7' class="sub">c7</li>
-                                    <li id='c7#' class="sub">c7#</li>
-                                    <li id='d7' class="sub">d7</li>
-                                    <li id='d7#' class="sub">d7#</li>
-                                    <li id='e7' class="sub">e7</li>
-                                    <li id='f7' class="sub">f7</li>
-                                    <li id='f7#' class="sub">f7#</li>
-                                    <li id='g7' class="sub">g7</li>
-                                    <li id='g7#' class="sub">g7#</li>
-                                    <li id='a7' class="sub">a7</li>
-                                    <li id='a7#' class="sub">a7#</li>
-                                    <li id='b7' class="sub">b7</li>
-                                </ul>
+                            <li id='C3C4' class="main octave7">
+                                <a>C#3C#4</a>
+                            </li>
+                            <li id='C4' class="main octave8">
+                                <a>C#4</a>
+                            </li>
+                            <li id='D3' class="main octave9">
+                                <a>D3</a>
+                            </li>
+                            <li id='D4' class="main octave10">
+                                <a>D#4</a>
+                            </li>
+                            <li id='D5' class="main octave11">
+                                <a>D5</a>
+                            </li>
+                            <li id='E2' class="main octave12">
+                                <a>E2</a>
+                            </li>
+                            <li id='E4' class="main octave13">
+                                <a>E4</a>
+                            </li>
+                            <li id='F2' class="main octave14">
+                                <a>F2</a>
+                            </li>
+                            <li id='F2F3' class="main octave15">
+                                <a>F2F3</a>
                             </li>
                             <li id='customize_none' class="main none">
                                 <a>None</a>
@@ -386,20 +330,20 @@
             </div>
             <div id="menu_button" onclick="menu_click()">
             </div>
-            <p id="whatis" class="whatis">Keiano</p>
+            <p id="whatis" class="whatis">Keitar</p>
         </div>
         <div id="hidden_menu">
             <div class="menu_zip">
                 <p class='menu_close' onclick="menu_click()">Close</p>
                 <ol>
-                    <li><input id="acmain" type="checkbox" checked='checked'></input>
-                        <label id="acmainlabel" for="acmain" class="menu_in_check-text" style="opacity: 1" onclick="check('acmain')">Main</label>
+                    <li><input id="acmain" type="checkbox"></input>
+                        <label id="acmainlabel" for="acmain" class="menu_in_check-text" onclick="check('acmain')">Main</label>
                     </li>
                     <li><input id="acarrow" type="checkbox"></input>
                         <label id="acarrowlabel" for="acarrow" class="menu_in_check-text" onclick="check('acarrow')">Arrow Key</label>
                     </li>
-                    <li><input id="acnumpad" type="checkbox"></input>
-                        <label id="acnumpadlabel" for="acnumpad" class="menu_in_check-text" onclick="check('acnumpad')">Number Pad</label>
+                    <li><input id="acnumpad" type="checkbox" checked='checked'></input>
+                        <label id="acnumpadlabel" for="acnumpad" class="menu_in_check-text" style="opacity: 1" onclick="check('acnumpad')">Number Pad</label>
                     </li>
                     <li class="effectsetting">
                         <label id="effectsetting" onclick="changeEffect()">Effect</label>
@@ -726,7 +670,7 @@
             }
         });
 
-        $('.sub').click(function() {
+        $('.main').click(function() {
             var id_check = $(this).attr("id");
             document.getElementById('choose').innerHTML = id_check;
         });
@@ -750,7 +694,6 @@
                 }
                 keystyleint = 1;
             }
-
 
             document.getElementById('choose').innerHTML = '';
             document.getElementById('before').innerHTML = '';

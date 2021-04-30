@@ -1,0 +1,120 @@
+.keyboard_layout_all {
+    grid-template-columns: 3fr 1fr 1fr;
+    width: 1415px;
+}
+
+.keyboard_layout_one {
+    grid-template-columns: 1fr;
+    width: 930px;
+}
+
+.keyboard_layout_main_other {
+    grid-template-columns: 3fr 1fr;
+    width: 1200px;
+}
+
+.keyboard_layout_others {
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+}
+
+#menu_button {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--effect_color);
+    border-radius: 50%;
+    top: -70px;
+    right: -70px;
+    opacity: 0.9;
+    transition: transform 0.5s;
+}
+
+#menu_button:hover {
+    width: 210px;
+    height: 210px;
+    cursor: pointer;
+}
+
+#hidden_menu {
+    position: absolute;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    display: none;
+    right: -735px;
+    top: -735px;
+    text-align: end;
+    font-family: 'Abel', sans-serif;
+    z-index: 100;
+}
+
+.menu_close {
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ol li {
+    list-style: none;
+    font-size: 40px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.menu_zip {
+    position: relative;
+    top: 730px;
+    right: 800px
+}
+
+.menu_in_check-text {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+/* nodrag 가져옴 https://ingryong.tistory.com/4 */
+
+.no-drag {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.effectsetting {
+    margin-top: 40px;
+}
+
+.devinfo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+    background-color: aliceblue;
+    border-radius: 50%;
+    bottom: -150px;
+    left: 200px;
+    transition: transform 0.5s;
+    z-index: -800;
+}
+
+.desctiption_sub {
+    opacity: 0.7;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.customize {
+    margin-top: 40px;
+}

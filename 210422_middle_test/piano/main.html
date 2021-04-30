@@ -16,13 +16,22 @@
             background-color: black;
             color: white;
             /* 여기부터 */
-            /* -ms-overflow-style: none; */
+            -ms-overflow-style: none;
         }
         
          ::-webkit-scrollbar {
             display: none;
         }
         /* 여기까지 스크롤바 없애는 코드 복사해온 것 */
+        /* nodrag 가져옴 https://ingryong.tistory.com/4 */
+        
+        .no-drag {
+            -ms-user-select: none;
+            -moz-user-select: -moz-none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;
+        }
         
         a {
             text-decoration: none;
@@ -117,7 +126,7 @@
     </style>
 </head>
 
-<body>
+<body class="no-drag">
     <div class="keystrument">
         <video autoplay muted loop class="keystrument_video">
             <source src="./video/keystrument.mp4" type="video/mp4">
@@ -134,7 +143,7 @@
             <source src="./video/piano.mp4" type="video/mp4">
         </video>
         <div class="keiano_title">
-            <a class="title" href="keyboard_layout.html">Keiano.</a>
+            <a class="title" href="./keyboard_layout.html">Keiano.</a>
             <p class="description">
                 beatiful melody in smooth typing.
             </p>
@@ -145,7 +154,7 @@
             <source src="./video/guitar.mp4" type="video/mp4">
         </video>
         <div class="keitar_title">
-            <a class="title" href="keyboard_layout.html">Keitar.</a>
+            <a class="title" href="./keitar.html">Keitar.</a>
             <p class="description">
                 the string by another finger.
             </p>
@@ -156,7 +165,7 @@
             <source src="./video/drum.mp4" type="video/mp4">
         </video>
         <div class="keirum_title">
-            <a class="title" href="keyboard_layout.html">Keirum.</a>
+            <a class="title" href="./keirum.html">Keirum.</a>
             <p class="description">
                 beats by Dr.keyboard.
             </p>
