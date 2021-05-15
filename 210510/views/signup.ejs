@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+
+<body style="background-color: cadetblue; text-align: center;">
+    <div id="header">
+        <ul>
+            <li>
+                <a href="/">Login</a>
+            </li>
+            <li>
+                <a href="/signup">SignUP</a>
+            </li>
+        </ul>
+    </div>
+    <form method="POST" action='/signup' v style="background-color: white; width:300px; height: 320px; border-radius: 10px; box-shadow: 3px 3px 3px; padding-top: 5px;">
+        <p style="font-size:30px;">회원가입</p>
+        <div>
+            <span>ID</span>
+            <input id="sign_id" name="id" type="text" style="width:200px; height:30px; margin-top: 5px;">
+        </div>
+        <div>
+            <span>PW</span>
+            <input id="sign_password" name="password" type="password" style="width:200px; height: 30px; margin-top: 20px;">
+        </div>
+        <button id="sign_in" style="width:210px; height: 60px;margin-top: 20px;">Sign UP</button>
+    </form>
+</body>
+
+</html>

@@ -24,12 +24,6 @@ function changeColor() {
     document.getElementById('color_subscrip').innerHTML = color_list_for_sub[k];
 }
 
-// var layout = [];
-
-// layout[0] = 1;
-// layout[1] = 0; //arrow
-// layout[2] = 0; //numpad
-
 //menu check 확인 후 text 색 변경 + 레이아웃 불러오기
 function check(id) {
     var checkid = document.getElementById(id);
