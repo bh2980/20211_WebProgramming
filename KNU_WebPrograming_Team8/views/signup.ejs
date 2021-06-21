@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="big_block">
+                <p class="login_text" style="margin-top:50px">회원가입</p>
+                <form class="signup_block" action="/signup/register" method="POST" style="margin-top:-50px">
+                    <div style="margin-left: -70px;">
+                        <p> <div class="sign_text">이름</div>
+                            <input type="text" class="name login_id" name="name" required>
+                        </p>
+                        <p><div class="sign_text">ID</div>
+                            <input type="text" class="id login_id" name="id" id="sign_id" required>
+                        </p>
+                        <p><div class="sign_text">비밀번호</div>
+                            <input type="password" class="pwd login_id" name="pwd" required>
+                        </p>
+                        <p> <div class="sign_text">전공</div>
+                            <select class="college_select" onchange="majorchange(this)" name="college">
+                                <option value="it" selected>IT대학</option>
+                                <option value="nurs">간호대학</option>
+                                <option value="cec">경상대학</option>
+                                <option value="eng">공과대학</option>
+                                <option value="agri">농업생명과학대학</option>
+                                <option value="law">법과대학</option>
+                                <option value="edu">사범대학</option>
+                                <option value="society">사회과학대학</option>
+                                <option value="live">생활과학대학</option>
+                                <option value="animal">수의과대학</option>
+                                <option value="drug">약학대학</option>
+                                <option value="art">예술대학</option>
+                                <option value="mix">융합학부</option>
+                                <option value="doctor">의과대학</option>
+                                <option value="inmun">인문대학</option>
+                                <option value="nat">자연과학대학</option>
+                                <option value="free">자율전공부</option>
+                                <option value="tooth">치과대학</option>
+                                <option value="gov">행정학부</option>
+                                <option value="science">과학기술대학</option>
+                                <option value="eco">생태환경대학</option>
+                            </select>
+                            <select id="major" class="major_select" name="major">
+                                <option selected>건설IT전공</option>
+                                <option>미디어아트전공</option>
+                                <option>빅데이터전공</option> 
+                                <option>전기공학과</option> 
+                                <option>전자공학부</option> 
+                                <option>컴퓨터학부</option> 
+                                <option>핀테크전공</option>
+                            </select>
+                        </p>
+                        <p><div class="sign_text">학년</div>
+                            <select class="grade_select" name="grade">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>기타</option>
+                            </select>
+                        </p>
+                        <p><div class="sign_text">학번</div>
+                            <input type="text" class="student_id login_id" name="studentId" required>
+                        </p>
+                    </div>
+                    <input type="submit" class="sign_btn" value="회원가입">
+                </form>
+                <div>
+                <%- include('layouts/footer'); -%>
+                <%- include('layouts/scripts'); -%>
+    </body>
+
+</html>

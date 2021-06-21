@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/navbar'); -%>
+        <%- include('layouts/category'); -%>
+        <hr style="margin:0px; border-color: rgb(212, 54, 54); border-top: none;">
+        <div onclick="openCategory('category')" class="category_btn2">
+            <i class="fas fa-bars"></i>
+            <span style="margin-left: 3px;">카테고리</span>
+        </div>
+            <div class="big_block">
+                <p class="login_text" style="margin-top: 50px;">My Page</p>
+                <form class="signup_block" action="/signup/delete" method="POST">
+                    <div style="margin-left: -70px;">
+                        <p><div class="sign_text">이름</div>
+                            <input type="text" class="name login_id" readonly value=<%= user.name %>>
+                        </p>
+                        <p><div class="sign_text">ID</div> 
+                            <input type="text" class="name login_id" name="id" readonly value=<%= user.id %>>
+                        </p>
+                        <!-- <p><div class="sign_text">비밀번호</div>
+                            <input type="submit" value="비밀번호 바꾸기">
+                        </p> -->
+                        <p><div class="sign_text">전공</div>
+                            <% if (user.college == "inmun"){ %>
+                                <input type="text" class="name input_college" name="college" readonly value='인문대학'>
+                            <% }else if (user.college == "society"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='생활과학대학'>
+                            <% }else if (user.college == "nat"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='자연과학대학'>
+                            <% }else if (user.college == "cec"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='경상대학'>
+                            <% }else if (user.college == "law"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='법과대학'>
+                            <% }else if (user.college == "eng"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='공과대학'>
+                            <% }else if (user.college == "agri"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='농업생명과학대학'>
+                            <% }else if (user.college == "edu"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='사범대학'>
+                            <% }else if (user.college == "art"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='예술대학'>
+                            <% }else if (user.college == "doctor"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='의과대학'>
+                            <% }else if (user.college == "tooth"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='치과대학'>
+                            <% }else if (user.college == "animal"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='수의과대학'>
+                            <% }else if (user.college == "live"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='생활과학대학'>
+                            <% }else if (user.college == "free"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='자율전공부'>
+                            <% }else if (user.college == "nurs"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='간호대학'>
+                            <% }else if (user.college == "it"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='IT대학'>
+                            <% } else if (user.college == "drug"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='약학대학'>
+                            <% }else if (user.college == "gov"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='행정학부'>
+                            <% }else if (user.college == "mix"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='융합학부'>
+                            <% }else if (user.college == "eco"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='생태환경대학'>
+                            <% }else if (user.college == "science"){ %> 
+                                <input type="text" class="name input_college" name="college" readonly value='과학기술대학'>
+                            <% } %>
+                            <input type="text" class="name input_college" name="major" readonly value=<%= user.major %>>
+                        </p>
+                        <p><div class="sign_text">학년</div>
+                            <input type="text" class="name login_id" name="grade" readonly value=<%= user.grade %>>
+                        </p>
+                        <p><div class="sign_text">학번</div>
+                            <input type="text" class="student_id login_id" readonly value=<%= user.studentId %>>
+                        </p>
+                    </div>
+                    <input type="submit" class="sign_btn" value="탈퇴하기">
+                </form>
+                <div>
+                    <%- include('layouts/footer'); -%>
+                    <%- include('layouts/scripts'); -%>
+    </body>
+
+</html>

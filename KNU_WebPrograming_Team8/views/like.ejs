@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+        <%- include('layouts/category'); -%>
+        <hr style="margin:0px; border-color: rgb(212, 54, 54); border-top: none;">
+        <div onclick="openCategory('category')" class="category_btn2">
+            <i class="fas fa-bars"></i>
+            <span style="margin-left: 3px;">카테고리</span>
+        </div>
+            <div class="big_block" style="height: 100%;">
+                <div class="main">
+                    <p class="login_text">찜</p>
+                    <% if(!lectures.length){ %>
+                        <div style="height : 100%; text-align: center; font-size: 50px;">찜 리스트가 비었습니다.</div>
+                        <% } %>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr">
+                        <% for(var i=0; i<lectures.length; i++){ %>
+                            <div style="height:190px; display: grid; grid-template-columns: 180px 300px 180px; margin:50px auto;">
+                                <a href="detail?lec_num=<%= lectures[i].lec_num %>" target="_blank" style=" text-decoration: none">
+                                    <div class="sample search_img" style="background-image: url('/img/<%= lectures[i].college %>.png');"></div>
+                                    <div class="sample" style="opacity: 0.3;"></div>
+                                    <div class="sample_text"><%= lectures[i].name %></div>
+                                </a>
+                                <div style="text-align: left;">
+                                    <a href="detail?lec_num=<%= lectures[i].lec_num %>" target="_blank" class="search_list_text" style="font-size: 30px; text-decoration: none;"><%= lectures[i].name %></a>
+                                    <p class="search_list_text"><%= lectures[i].lec_num %></p>
+                                    <br>
+                                    <% if(prefessor[i]){ %>
+                                        <div class="search_list_text"><%= lectures[i].prefessor %></div>
+                                    <% }else{ %>
+                                        <div class="search_list_text">상세 참조</div>
+                                    <% } %>
+        
+                                    <div class="search_list_text"><%= lectures[i].college %> / <%= lectures[i].major %></div>
+                                    <p class="search_list_text"><%= lectures[i].real_time %></p>
+                                </div>
+                                <div class="etc" style="margin-top:10px;">
+                                    <div>
+                                        <div class="price"><%= lectures[i].grades %> <span style="font-size: 30px;">학점</span></div>
+                                        <div style="width:100%; margin-top:20px; margin-left: 10px;">
+                                            <a href="basket/<%= lectures[i].lec_num %>" class="lecture_item"><i class="fas fa-shopping-bag header_menu_icon"  style="color: rgb(46, 46, 46);"></i></a>
+                                            <a href="like/delete/<%= lectures[i].lec_num %>" class="lecture_item"><i class="fas fa-trash-alt header_menu_icon"  style="color: rgb(46, 46, 46);"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <%- include('layouts/footer'); -%>
+            <%- include('layouts/scripts'); -%>
+    </body>
+
+</html>

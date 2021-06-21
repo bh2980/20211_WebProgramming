@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+        <%- include('layouts/category'); -%>
+        <hr style="margin:0px; border-color: rgb(212, 54, 54); border-top: none;">
+        <div onclick="openCategory('category')" class="category_btn2">
+            <i class="fas fa-bars"></i>
+            <span style="margin-left: 3px;">카테고리</span>
+        </div>
+            <div class="big_block" style="margin-top: 50px;">
+                <p class="login_text"><%= d %></p>
+                <div class="main">
+                    <div style="display:grid; grid-template-columns: 1fr 1fr">
+                        
+                        <% for(var i=0; i<lectures.length; i++){ %>
+                            <div style="height:190px; display: grid; grid-template-columns: 180px 1fr 200px; margin:50px auto;">
+                                <a href="/detail?lec_num=<%= lectures[i].lec_num %>" style=" text-decoration: none">
+                                    <div class="sample search_img" style="background-image: url('/img/<%= lectures[i].college %>.png');"></div>
+                                    <div class="sample" style="opacity: 0.3;"></div>
+                                    <div class="sample_text"><%= lectures[i].name %></div>
+                                </a>
+                                <div style="text-align: left;">
+                                    <a href="/detail?lec_num=<%= lectures[i].lec_num %>" class="search_list_text" style="font-size: 30px; text-decoration: none;"><%= lectures[i].name %></a>
+                                    <p class="search_list_text"><%= lectures[i].lec_num %></p>
+                                    <br>
+                                    <% if(prefessor[i]){ %>
+                                        <div class="search_list_text"><%= lectures[i].prefessor %></div>
+                                    <% }else{ %>
+                                        <div class="search_list_text">상세 참조</div>
+                                    <% } %>
+        
+                                    <div class="search_list_text"><%= lectures[i].college %> / <%= lectures[i].major %></div>
+                                    <p class="search_list_text"><%= lectures[i].real_time %></p>
+                                </div>
+                                <div class="etc" style="margin-top:10px;">
+                                    <div>
+                                        <div class="price"><%= lectures[i].grades %> <span style="font-size: 30px;">학점</span></div>
+                                        <div style="width:100%; margin-top:20px; margin-left: 10px;">
+                                            <a href="like/<%= lectures[i].lec_num %>" class="lecture_item"><i class="fas fa-heart header_menu_icon" style="color: rgb(46, 46, 46);"></i></a>
+                                            <a href="basket/<%= lectures[i].lec_num %>" class="lecture_item"><i class="fas fa-shopping-bag header_menu_icon"  style="color: rgb(46, 46, 46);"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination justify-content-center">
+                <% if (!page) page=1 %>
+                <% if (page % 10 == 0) { %>
+                    <% var scale = Math.floor(page / 10) - 1 %> 
+                <% } else { %> 
+                    <% var scale = Math.floor(page / 10); %>
+                <% } %> 
+                <% var start = 1 + 10 * scale %> 
+                <% var end = 10 + 10 * scale %> 
+                <% if (total_length <= end){ %>
+                    <% end = total_length %>
+                <% } %> 
+                <% if (start == 1){ %> 
+                    <li class="page-item disabled">
+                        <a class="page-link" href="?page=<%= i %>"> < </a>
+                    </li>
+                <% } else { %> 
+                    <li class="page-item">
+                        <a class="page-link" href="?page=<%= start - 10 %>"> < </a>
+                    </li>
+                <% } %> 
+                <% for (let i = start; i<= end; i++){ %> 
+                    <% if (i == page) { %>
+                        <li class="page-item active">
+                            <a class="page-link " href="?page=<%= i %>"><%= i %></a>
+                        </li>
+                    <% } else { %> 
+                        <li class="page-item">
+                            <a class="page-link" href="?page=<%= i %>"><%= i %></a>
+                        </li>
+                    <% } %> 
+                <% } %>
+
+                <% if ( total_length == end){ %> 
+                    <li class="page-item disabled">
+                        <a class="page-link" href="?page=<%= end %>"> > </a>
+                    </li>
+                <% } else { %> 
+                    <li class="page-item">
+                        <a class="page-link" href="?page=<%= end+1 %>"> > </a>
+                    </li>
+                <% } %> 
+            </ul>
+            <%- include('layouts/footer'); -%>
+        <%- include('layouts/scripts'); -%>
+    </body>
+
+</html>
