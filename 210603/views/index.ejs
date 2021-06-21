@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="promotion">
+                <div id="promotion1" style="width:100%; height:inherit; background-color:aqua; position: absolute; "></div>
+                <div id="promotion2" style="width:100%; height:1nherit; background-color:red; position: absolute; opacity: 0;"></div>
+                <div id="promotion3" style="width:100%; height:inherit; background-color:yellow; position: absolute; opacity: 0;"></div>
+            </div>
+            <div class="main">
+                <div class="today">
+                    <div class="subtitle">학교 가기 싫은 당신을 위해</div>
+                    <ul class="sample_list leftlist">
+                        <% for(var i=0; i<5; i++){ %>
+                        <li>
+                            <a href="<%= today[i].lec_link %>" class="lecture_item">
+                                <div class="sample"></div>
+                                <div><%= today[i].name %></div>
+                            </a>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <div class="subtitle">이번 학기 인기 교양 Top 10</div>
+                    <ul class="sample_list leftlist">
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                    </ul>
+                    <ul class="sample_list leftlist">
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                        <li>
+                            <div class="sample"></div>
+                            <div>hello</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <%- include('layouts/footer'); -%>
+
+                <script>
+                    //나중에
+                    var promotion1 = document.getElementById('promotion1');
+                    var promotion2 = document.getElementById('promotion2');
+                    var promotion3 = document.getElementById('promotion3');
+
+                    ! function promotion() {
+                        setTimeout(function() {
+                            promotion2.classList.add('promotion_ani_rev');
+                        }, 1000);
+
+                        setTimeout(function() {
+                            promotion3.classList.add('promotion_ani_rev');
+                        }, 2000);
+
+                        setTimeout(function() {
+                            promotion2.classList.remove('promotion_ani_rev');
+                            promotion3.classList.remove('promotion_ani_rev');
+                            promotion2.classList.add('promotion_ani');
+                            promotion3.classList.add('promotion_ani');
+                        }, 3000);
+                    }();
+                </script>
+    </body>
+
+</html>

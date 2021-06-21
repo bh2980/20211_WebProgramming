@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header') -%>
+    <body>
+        <%- include('layouts/navbar') -%>
+        <%- include('layouts/category') -%>
+        <hr style="margin:0px; border-color: rgb(212, 54, 54); border-top: none;">
+        <div onclick="openCategory('category')" class="category_btn2">
+            <i class="fas fa-bars"></i>
+            <span style="margin-left: 3px;">카테고리</span>
+        </div>
+        <div class="big_block" style="height: 100%; margin-top: 50px;;">
+            <div style="width:900px; margin:auto; padding-top:50px">
+                <div class="recipe" style="background-color:rgb(211, 82, 82); height:100%; min-height: 250px; margin:auto; color:white; text-shadow: 1px 1px black;">
+                    <div style="height:190px; display: flex; margin:50px auto;">
+                        <div style="margin-left:10px">
+                            <div class="detail_img sample " style="background-image: url('/img/<%= lecture.college %>.png');"></div>
+                            <div class="sample" style="opacity: 0.3;"></div>
+                            <div class="sample_text"><%= lecture.name %></div>
+                        </div>
+                        <div style="display:grid; text-align:left; margin-left:80px">
+                            <div style="font-size: 50px; text-decoration: none;"><%= lecture.name %> </div>
+                            <p id="title" class="search_list_text"><%= lecture.lec_num %></p>
+                            <ul class="leftlist" style="padding:0px; margin-top: 40px;">
+                                <li>
+                                    <div class="price">
+                                        <%= lecture.grades %> <span style="font-size: 30px;">학점</span>
+                                    </div>
+                                </li>
+                                <li style="margin-top: 25px; margin-left: 80px; font-size: 25px;">
+                                    <a href="like/<%= lecture.lec_num %>" class="lecture_item" style="color:white"><i class="fas fa-heart header_menu_icon" style="color:white"></i>찜하기</a>
+                                </li>
+                                <li style="width:200px; margin-top: 25px; font-size: 25px;">
+                                    <a href="basket/<%= lecture.lec_num %>" class="lecture_item" style="color:white"><i class="fas fa-shopping-bag header_menu_icon" style="color:white"></i>장바구니</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin:0px;">
+                <div style="display:grid; grid-template-columns: 55fr 45fr; width:840px; background-color: aliceblue; margin:auto; box-shadow:1px 1px rgb(112, 112, 112); padding:30px; border-bottom: solid 1px black;">
+                    <table class="lec_detail" style="text-align: left;">
+                        <tr>
+                            <th>개설대학</th>
+                            <td><%= lecture.college %></td>
+                        </tr>
+                        <tr>
+                            <th>전공</th>
+                            <td><%= lecture.major %> <%= lecture.concentration %></td>
+                        </tr>
+                        <tr>
+                            <th>교수</th>
+                            <td><%= lecture.prefessor %></td>
+                        </tr>
+                        <tr>
+                            <th>분류</th>
+                            <td><%= lecture.lec_cat %> / <%= lecture.lec_method %></td>
+                        </tr>
+                        <tr>
+                            <th>시간</th>
+                            <td><%= lecture.time %></td>
+                        </tr>
+                        <tr>
+                            <th>장소</th>
+                            <td><%= lecture.lec_room %></td>
+                        </tr>
+                        <tr>
+                            <th>수강정원</th>
+                            <td><%= lecture.students %></td>
+                        </tr>
+                        <tr>
+                            <th>비고</th>
+                            <td><%= lecture.etc %></td>
+                        </tr>
+                    </table>
+                    <div class="lecture_rating">
+                        <% if(average){ %>
+                        <span style="font-size: 150px;"><%= average %></span>
+                        <% }else{ %>
+                        <span style="font-size: 150px;">0</span>
+                        <% } %>
+                        <span style="font-size: 50px;">/5</span>
+                        <% if(average == 5){ %>
+                            <div style="font-size: 20px;">인생 강의에요!</div>
+                        <% }else if(average < 5 && 4 <= average){ %>
+                            <div style="font-size: 20px;">만족해요</div>
+                        <% }else if(average < 4 && 3 <= average){ %>
+                            <div style="font-size: 20px;">나쁘지 않아요</div>
+                        <% }else if(average < 3 && 2 <= average){ %>
+                            <div style="font-size: 20px;">그저 그래요</div>
+                        <% }else if(average < 2 && 1 <= average){ %>
+                            <div style="font-size: 20px;">별로에요</div>
+                            <% }else if(average < 1 && 0 <= average){ %>
+                            <div style="font-size: 20px;">최악이에요</div>
+                        <% }else{ %>
+                            <div style="font-size: 15px;">아직 강의평이 없어요</div>
+                        <% } %>
+                    </div>
+                </div>
+                <div id="lecture_detail" style="background-color:aliceblue; width: 900px; height:0px; margin:0px auto; overflow: hidden;box-shadow:1px 1px black;">
+                    <iframe style="background-color:aliceblue; width: 954px; height:900px; border:none; margin-top:-365px; margin-left:-18px;" src="<%= lecture.lec_link %>"></iframe>
+                </div>
+                <div style="background-color:rgb(211, 82, 82); color:white; width:900px; height:30px;box-shadow:1px 1px black; display:table-cell; ;vertical-align: middle;" onclick="openCategory('lecture_detail')">상세보기</div>
+                <div style="background-color: aliceblue; font-size: 40px; padding-top:30px; box-shadow: 1px 1px black;">상품평</div>
+                <div style="background-color:aliceblue; width:900px;box-shadow:1px 1px black;">
+                    <div>
+                        <table style="width:900px; text-align:left; padding:30px;">
+                            <% if(comments.length){ %>
+                                <% for(var i=0; i<comments.length; i++){ %>
+                            <tr>
+                                <td style="padding-top:10px; padding-left:10px">ID : <%= comments[i].user_id %></td>
+                                <td></td>
+                                <td style="text-align:right"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: rgb(211, 82, 82); font-size: 20px; width: 625px; padding:10px 20px; border-radius: 5px; color:white"><%= comments[i].comment %></td>
+                                <td></td>
+                                <td style="text-align:right;font-size: 20px;">
+                                    <% if(comments[i].rating == 5){ %>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                    <% }else if(comments[i].rating == 4){ %>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                    <% }else if(comments[i].rating == 3){ %>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                    <% }else if(comments[i].rating == 2){ %>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                    <% }else{ %>
+                                        <i style="color:rgb(211, 82, 82)" class="fas fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                        <i style="color:rgb(211, 82, 82)" class="far fa-star"></i>
+                                    <% } %>
+                                    <div style="font-size: 15px; opacity: 0.8;">
+                                        <% if(user_id != undefined && user_id == comments[i].user_id){ %>
+                                            <a href="/comment/<%= comments[i]._id %>" style="text-decoration: none; color:black;">삭제</a></div>
+                                        <% } %>
+                                    </td>
+                            </tr>
+                                <% } %>
+                            <% }else{ %>
+                                <div style="height: 150px; line-height: 150px;">새 코멘트를 작성해주세요!</div>
+                            <% } %>
+                        </table>
+                    </div>
+                </div>
+                <% if(logined) { %>
+                    <div style="display:flex; padding:20px; background-color: rgb(211, 82, 82); box-shadow: 1px 1px black;">
+                        <div style="margin-left: 40px">
+                            <div style="font-size: 40px; line-height: 100px;">
+                                <i id="star1" class="far fa-star star" onclick="sendStar('star1')"></i>
+                                <i id="star2" class="far fa-star star" onclick="sendStar('star2')"></i>
+                                <i id="star3" class="far fa-star star" onclick="sendStar('star3')"></i>
+                                <i id="star4" class="far fa-star star" onclick="sendStar('star4')"></i>
+                                <i id="star5" class="far fa-star star" onclick="sendStar('star5')"></i>
+                            </div>
+                        </div>
+                        <textarea id="review" cols="28" rows="3"></textarea>
+                        <button class="review_btn" onclick="saveReview()">저장</button>
+                    </div>
+                    <%} else { %>
+                        <div style="display:flex; padding:20px; background-color: rgb(211, 82, 82); box-shadow: 1px 1px black;">
+                            <div style="margin-left: 40px">
+                                <div style="font-size: 40px; line-height: 100px;">
+                                    <i id="star1" class="far fa-star star" onclick="sendStar('star1')"></i>
+                                    <i id="star2" class="far fa-star star" onclick="sendStar('star2')"></i>
+                                    <i id="star3" class="far fa-star star" onclick="sendStar('star3')"></i>
+                                    <i id="star4" class="far fa-star star" onclick="sendStar('star4')"></i>
+                                    <i id="star5" class="far fa-star star" onclick="sendStar('star5')"></i>
+                                </div>
+                            </div>
+                            <textarea id="review" disabled cols="28" rows="3">로그인 후 작성할 수 있습니다.</textarea>
+                            <button class="review_btn" disabled onclick="saveReview()">저장</button>
+                        </div>
+                    <% } %>
+            </div>
+        <div>
+            <%- include('layouts/footer') -%>
+            <%- include('layouts/scripts') -%>
+    </body>
+
+</html>

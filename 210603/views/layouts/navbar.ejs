@@ -1,0 +1,38 @@
+<div class="header">
+    <div class="logo">
+        <a class="navbar-brand" href="/">
+            <img src="img/logo.jpg" class="mainlogo" alt="logo" width="70px" class="mainlogo">
+            <!-- <span class="title_text">Shop of KNU</span> -->
+        </a>
+    </div>
+    <div></div>
+    <form class="searchbox" action="/search" method="GET">
+        <select class="category_btn" name="filter" style="width:inherit;">
+            <option value="all">전체</option>
+            <option value="name">강의 제목</option>
+            <option value="professor">교수명</option>
+            <option value="lec_num">과목코드</option>
+            <option value="major">전공</option>
+        </select>
+        <input type="text" class="search" name="searching">
+        <input type="submit" class="search_btn">
+    </form>
+    <div></div>
+    <% if(!user_id){ %>
+    <div class="logout">
+        <a class="header_menu" href="/login">Login</a>
+        <a class="header_menu" href="/signup">Sign Up</a>
+    </div>
+    <% } else{ %>
+    <div class="login">
+        <ul class="login_list leftlist">
+            <li>
+                <a href="/like"><i class="fas fa-heart header_menu_icon"></i></a>
+            </li>
+            <li><a href="/basket"><i class="fas fa-shopping-bag header_menu_icon"></i></a></li>
+            <li><a href="/mypage"><i class="fas fa-user-alt header_menu_icon"></i></a></li>
+            <li><a href="/logout" class="header_menu">Logout</a></li>
+        </ul>
+    </div>
+    <% } %>
+</div>

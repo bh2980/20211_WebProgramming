@@ -1,0 +1,17 @@
+.search_img {
+    float: left;
+    width:200px;
+    height:160px;
+    box-shadow: 3px 3px black;
+}
+
+.detail_img {
+    float: left;
+    width:250px;
+    height:210px;
+    box-shadow: 3px 3px black;
+}
+
+.price{
+    font-size: 50px;
+}

@@ -1,0 +1,249 @@
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+ul {
+    margin: 0px;
+    list-style: none;
+}
+
+ul.leftlist li {
+    float: left;
+}
+
+div.header {
+    background-color: rgb(163, 0, 0);
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 250px 1fr 5fr 1fr 300px;
+    min-width: 1290px;
+}
+
+div.logo {
+    height: inherit;
+    margin-top: 22px;
+}
+
+a.navbar-brand {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+img.mainlogo {
+    margin-left: 100px;
+    border-radius: 40%;
+}
+
+span.title_text {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+form.searchbox {
+    margin-left: 20px;
+    margin-top: 30px;
+    height: inherit;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 8fr 1fr;
+}
+
+select.category_btn {
+    background-color: rgb(216, 216, 216);
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    min-width: 100px;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+select.category_btn:focus {
+    outline: none;
+}
+
+li.category_list {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+li.category_list:hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: gray;
+}
+
+input.search {
+    display: relative;
+    height: 40px;
+    border: none;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+input.search:focus {
+    outline: none;
+}
+
+input.search_btn {
+    background-color: rgb(212, 54, 54);
+    height: 40px;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    min-width: 40px;
+}
+
+a.header_menu {
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header_menu_icon {
+    font-size: 30px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+div.logout {
+    text-align: center;
+    margin-top: 35px;
+    height: inherit;
+    /* display: none; */
+}
+
+div.login {
+    margin-top: 35px;
+    height: inherit;
+    /* display: none; */
+}
+
+div.main {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+div.promotion {
+    background-color: red;
+    width: 100%;
+    height: 350px;
+    min-width: 1290px;
+}
+
+@keyframes promotion_animation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes promotion_animation_reverse {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.promotion_ani {
+    animation-name: promotion_animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.promotion_ani_rev {
+    animation-name: promotion_animation_reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+div.prev {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 225px;
+    left: 220px;
+}
+
+div.next {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 225px;
+    right: 220px;
+}
+
+a.lecture_item{
+    text-decoration: none;
+    color:black;
+}
+
+div.today {
+    text-align: center;
+    width: 100%;
+    height: 240px;
+    min-width: 877px;
+}
+
+div.subtitle {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+ul.sample_list {
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+div.sample {
+    background-color: blue;
+    width: 130px;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+div.ranking {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    min-width: 877px;
+}
+
+
+/* 
+div.list {
+    background: color:
+} */
+
+div.footer {
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 100px;
+    min-width: 1290px;
+}

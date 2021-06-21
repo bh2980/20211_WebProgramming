@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="big_block">
+                <p><%= filter %> : "<%= searching %>" 검색결과</p>
+                <div class="main">
+                    <% for(var i=0; i<lectures.length; i++){ %>
+                        <div class="sample search_img"></div>
+                        <div class="search_text">
+                            <p><%= lectures[i].name %></p>
+                            <p><%= lectures[i].prefessor %></p>
+                            <p><%= lectures[i].lec_num %></p>
+                            <p><%= lectures[i].college %> / <%= lectures[i].major %></p>
+                            <p><%= lectures[i].real_time %></p>
+                            <p><%= lectures[i].grades %></p>
+                        </div>
+                        <div class="etc">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+            <%- include('layouts/footer'); -%>
+    </body>
+
+</html>

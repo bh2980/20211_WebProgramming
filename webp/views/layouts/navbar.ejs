@@ -1,0 +1,64 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="header">
+    <div class="logo">
+        <a class="navbar-brand" href="/">
+            <img src="/img/logo.jpg" class="mainlogo" alt="logo" width="70px" class="mainlogo">
+            <span class="title_text">SHOPATKNU</span>
+        </a>
+    </div>
+    <form class="searchbox" action="/search" method="GET">
+        <select class="category_btn" name="filter">
+            <option value="all">전체</option>
+            <option value="name">강의 제목</option>
+            <option value="professor">교수명</option>
+            <option value="lec_num">과목코드</option>
+            <option value="major">전공</option>
+        </select>
+        <input type="text" class="search" name="searching" placeholder="">
+        <input type="submit" class="search_btn" id="search_btn" value="">
+        <i class="fas fa-search" style="position: relative; right:42px; top:15px; color:white; cursor: pointer;" onclick="$('#search_btn').trigger('click');"></i>
+    </form>
+    <% if(!user_id){ %>
+        <div class="logout">
+            <div class="log_menu">
+                <a class="header_menu" href="/login">로그인</a>
+                <a class="header_menu" style="cursor: default;">|</a>
+                <a class="header_menu" href="/signup">회원가입</a>
+            </div>
+            <ul class="icon_menu">
+                <li>
+                    <a href="/like">
+                        <i class="fas fa-heart header_menu_icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/basket">
+                        <i class="fas fa-shopping-bag header_menu_icon"></i>
+                    </a>
+                </li>
+                <li><a href="/mypage"><i class="fas fa-user-alt header_menu_icon"></i></a></li>
+            </ul>
+        </div>
+    <% } else{ %>
+        <div class="logout">
+            <div class="log_menu">
+                <a class="header_menu" href="/mypage"><%= user_id %>님</a>
+                <a class="header_menu" style="cursor: default;">|</a>
+                <a class="header_menu" href="/logout">로그아웃</a>
+            </div>
+            <ul class="icon_menu">
+                <li>
+                    <a href="/like">
+                        <i class="fas fa-heart header_menu_icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/basket">
+                        <i class="fas fa-shopping-bag header_menu_icon"></i>
+                    </a>
+                </li>
+                <li><a href="/mypage"><i class="fas fa-user-alt header_menu_icon"></i></a></li>
+            </ul>
+        </div>
+    <% } %>
+</div>

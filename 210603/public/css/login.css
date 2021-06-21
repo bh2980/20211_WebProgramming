@@ -1,0 +1,40 @@
+div.big_block {
+    width: 100%;
+    text-align: center;
+}
+
+div.login_block {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+p.login_text {
+    font-size: 100px;
+}
+
+div.login_text_box {
+    background-color: aqua;
+    width: 1px;
+    height: 100px;
+}
+
+input.login_id {
+    width: 200px;
+    height: 30px;
+}
+
+input.login_pwd {
+    width: 200px;
+    height: 30px;
+}
+
+input.id_btn {
+    width: 200px;
+    height: 30px;
+}
+
+a.signup_link {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+        <%- include('layouts/category'); -%>
+        <div class="promotion">
+            <div onclick="openCategory('category')" class="category_btn">
+                <i class="fas fa-bars"></i>
+                <span style="margin-left: 3px;">카테고리</span>
+            </div>
+            <div style="background-image: url('/img/promotion1.png'); z-index: 0;" class="promotion_image" id="promition1"></div>
+            <div style="background-image: url('/img/promotion2.png'); opacity: 0; z-index: 0;;" class="promotion_image" id="promotion2"></div>
+        </div>
+        <div class="main">
+            <div class="today">
+               <div class="today_subtitle">
+                    <div class="forfont">학교 가기</i><br> 싫은 <br>당신을 위해</div>
+                </div>
+                <ul class="sample_list leftlist">
+                    <% for(var i=0; i<5; i++){ %>
+                    <li>
+                        <a href="detail?lec_num=<%= today[i].lec_num %>" class="lecture_item">
+                            <div class="sample" style="background-image: url('/img/<%= today[i].college %>.png'); box-shadow: 3px 3px 4px black;"></div>
+                            <div class="sample" style="opacity: 0.3;"></div>
+                            <div class="sample_text"><%= today[i].name %></div>
+                            <div style="position: relative; top:70px;"><%= today[i].name %></div>
+                        </a>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+            <br>
+            <hr>
+            <div class="ranking">
+                <div class="subtitle" style="text-align: center; margin:0px">전공에 지쳤을 땐 교양을 들어봐요</div>
+                <ul class="ranking_list leftlist">
+                    <% for(var i=0; i<5; i++){ %>
+                        <li>
+                            <a href="detail?lec_num=<%= recommend[i].lec_num %>" class="lecture_item" target="_blank">
+                                <div class="sample" style="background-image: url('/img/<%= recommend[i].college %>.png'); box-shadow: 3px 3px 4px black;"></div>
+                                <div class="sample" style="opacity: 0.3;"></div>
+                                <div class="sample_text"><%= recommend[i].name %></div>
+                                <div style="position: relative; top:70px;"><%= recommend[i].name %></div>
+                            </a>
+                        </li>
+                        <% } %>
+                </ul>
+                <ul class="ranking_list2 leftlist">
+                    <% for(var i=5; i<10; i++){ %>
+                        <li>
+                            <a href="detail?lec_num=<%= recommend[i].lec_num %>" class="lecture_item" target="_blank">
+                                <div class="sample" style="background-image: url('/img/<%= recommend[i].college %>.png'); box-shadow: 3px 3px 4px black;"></div>
+                                <div class="sample" style="opacity: 0.3;"></div>
+                                <div class="sample_text"><%= recommend[i].name %></div>
+                                <div style="position: relative; top:70px;"><%= recommend[i].name %></div>
+                            </a>
+                        </li>
+                        <% } %>
+                </ul>
+            </div>
+        </div>
+        <%- include('layouts/footer'); -%>
+        <%- include('layouts/scripts'); -%>
+        <script>
+            var promotion2 = document.getElementById('promotion2');
+
+            ! function promotion() {
+                setInterval(()=>{
+                    promotion2.classList.remove('promotion_ani_rev');
+                    promotion2.classList.add('promotion_ani');
+
+                    setTimeout(function() {
+                        promotion2.classList.remove('promotion_ani');
+                        promotion2.classList.add('promotion_ani_rev');
+                    }, 5000);
+                }, 10000);
+
+                setTimeout(function() {
+                    promotion2.classList.remove('promotion_ani');
+                    promotion2.classList.add('promotion_ani_rev');
+                }, 5000);
+            }();
+        </script>
+    </body>
+</html>

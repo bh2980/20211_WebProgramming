@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="big_block" style="height:80vh;">
+                <p class="login_text" style="height:300px; margin:auto; padding-top: 80px;">Login</p>
+                <div class="login_block">
+                    <p style="margin-top:-150px; margin-bottom: 80px;">안녕하세요!</p>
+                    <form action="/login/match" method="POST">
+                        <div>
+                            <p><input type="text" class="login_id" name="id" required placeholder="아이디"></p>
+                            <p><input type="password" class="login_pwd search" name="pwd" required  placeholder="비밀번호"></p>
+                        </div>
+                        <input type="submit" class="id_btn" value="로그인">
+                    </form>
+                    <p><a href="/signup" class="signup_link">회원가입</a></p>
+                </div>
+            </div>
+        <%- include('layouts/footer'); -%>
+        <%- include('layouts/scripts'); -%>
+    </body>
+</html>
