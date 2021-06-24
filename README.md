@@ -12,7 +12,7 @@ HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 기초
 
 ### [210422 : Keystrument](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
 
-![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
+>![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
 
 고급웹프로그래밍 중간고사 개인 프로젝트 과제
 
@@ -84,8 +84,6 @@ Node.js를 이용한 백엔드 기초
 
 
 > ![Shop at KNU - Chrome 2021-06-24 오후 11_26_50](https://user-images.githubusercontent.com/74360958/123280628-e8c9da80-d543-11eb-8d9e-ac2abf09cbac.png)
-SHOPATKNU
-
 https://shop-at-knu.herokuapp.com/
 
 <details>
