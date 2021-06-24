@@ -93,7 +93,7 @@ Node.js를 이용한 백엔드 기초
 https://shop-at-knu.herokuapp.com/
 
 <details>
-<summary>접기/펼치기 버튼</summary>
+<summary>Detail</summary>
 <div markdown="1">
 <p></p>
   
