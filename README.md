@@ -49,7 +49,16 @@ Keystrument는 사용자의 커스터마이징을 지원합니다.
 ```
 
 >![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
+```
+출처
 
+
+동영상:
+https://www.pexels.com/ko-kr/video/2022395/
+https://www.pexels.com/ko-kr/video/2306150/
+https://www.pexels.com/ko-kr/video/853767/
+https://www.pexels.com/ko-kr/video/5659545/
+```
 
 ### 210430 ~ 210605 : Node.js
 
