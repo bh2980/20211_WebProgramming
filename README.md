@@ -13,7 +13,6 @@ HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 개발 기초 �
 ### [210422 : 중간 개인프로젝트](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
 
 >![image01](https://user-images.githubusercontent.com/74360958/123272379-a81a9300-d53c-11eb-812d-c851ca0b9fa3.jpg)
->Keystrument
 
 ```
 아이패드에서 피아노를 연주하는 어플을 본 적 있나요?
