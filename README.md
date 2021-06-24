@@ -30,7 +30,13 @@ Keystrument는 컴퓨터만 있다면 악기를 연주할 수 있게 만들어�
 
 ```
 Keystrument는 3가지 악기를 제공합니다.
-Keiano, Kitar, Kirum으로 당신의 연주를 들려주세요.
+
+  1. Keiano (Piano)
+  2. Keitar (Guitar)
+  3. Keirum (Drum)
+  
+이 세 가지 악기로 당신을 위한 연주를 시작하세요.
+추후 업데이트로 더 다양한 악기가 추가되진 않을겁니다. 과제라서요.
 ```
 
 ### 210430 ~ 210605 : Node.js
