@@ -184,6 +184,9 @@ https://shop-at-knu.herokuapp.com/
   
   ![KakaoTalk_20210609_174513260_04](https://user-images.githubusercontent.com/74360958/123286742-22511480-d549-11eb-9007-6faabfe1f469.jpg)
   
+  ![KakaoTalk_20210609_174513260_03](https://user-images.githubusercontent.com/74360958/123287308-9db2c600-d549-11eb-93de-63eb31f190e9.jpg)
+  ![KakaoTalk_20210609_174513260_02](https://user-images.githubusercontent.com/74360958/123287320-9ee3f300-d549-11eb-9794-c9af8370f048.jpg)
+  
   ![KakaoTalk_20210609_174513260](https://user-images.githubusercontent.com/74360958/123286724-1feeba80-d549-11eb-83c6-4e01ce6cf7f7.jpg)
   ![KakaoTalk_20210609_174513260_01](https://user-images.githubusercontent.com/74360958/123286736-211fe780-d549-11eb-8b86-c9287bf28303.jpg)
 
