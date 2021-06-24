@@ -60,13 +60,16 @@ https://www.pexels.com/ko-kr/video/5659545/
 
 ### 210430 ~ 210605 : Node.js
 
-````
+```
 Node.js를 이용한 백엔드 기초
 ```
 
 ### [KNU WebProgrammung Team8 : 기말 팀프로젝트](https://github.com/bh2980/20211_WebProgramming/tree/main/KNU_WebPrograming_Team8)
 
-> SHOPATKNU
+> ![Shop at KNU - Chrome 2021-06-24 오후 11_26_50](https://user-images.githubusercontent.com/74360958/123280628-e8c9da80-d543-11eb-8d9e-ac2abf09cbac.png)
+SHOPATKNU
+
+https://shop-at-knu.herokuapp.com/
 
 ```
 
