@@ -4,9 +4,17 @@
 참고 : [스파르타 코딩 클럽](https://github.com/bh2980/SpartaCordeiClub/)
 
 
-### [210313 ~ 210408 : Front-end 기초](https://github.com/bh2980/20211_WebProgramming.git)
+### [210313 ~ 210408 : Front-end 기초]
 
 ```
-HTML, CSS, 자바스크립ㅌ, Jquery를 통한 프론트앤드 개발 기초
+HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 개발 기초
 ```
 
+### [210422 : 중간 개인프로젝트](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
+
+>개요
+HTML, CSS, 자바스크립트, Jquery를 이용하여 
+
+```
+HTML, CSS, 
+```
