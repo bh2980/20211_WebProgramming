@@ -30,7 +30,7 @@ HTML, CSS, 자바스크립트, Jquery를 이용하여 웹페이지를 기획하�
 
 ```
 
-### [KNU WebProgrammung Team8 : 기말 팀프로젝트]
+### [KNU WebProgrammung Team8 : 기말 팀프로젝트](https://github.com/bh2980/20211_WebProgramming/tree/main/KNU_WebPrograming_Team8)
 
 
 ```
