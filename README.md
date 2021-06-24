@@ -15,9 +15,8 @@ HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 기초
 
 고급웹프로그래밍 중간고사 개인 프로젝트 과제
 
-
 <details>
-<summary>접기/펼치기 버튼</summary>
+<summary>Detail</summary>
 <div markdown="1">
 
 
