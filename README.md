@@ -25,9 +25,13 @@ Keystrument는 컴퓨터만 있다면 악기를 연주할 수 있게 만들어�
 연주하세요, 키보드 위에서.
 ```
 
-![image02](https://user-images.githubusercontent.com/74360958/123273146-57576a00-d53d-11eb-9d42-03310301fbe3.png)
+>![image02](https://user-images.githubusercontent.com/74360958/123273146-57576a00-d53d-11eb-9d42-03310301fbe3.png)
+Keiano
 ![image03](https://user-images.githubusercontent.com/74360958/123273206-663e1c80-d53d-11eb-9bba-d0d6388289a2.png)
+Keirum
 ![image04](https://user-images.githubusercontent.com/74360958/123273234-6dfdc100-d53d-11eb-8249-aa7981d81c28.png)
+Keitar
+
 
 ```
 Keystrument는 3가지 악기를 제공합니다.
