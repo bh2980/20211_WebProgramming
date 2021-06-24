@@ -39,9 +39,11 @@ Keystrument는 3가지 악기를 제공합니다.
 추후 업데이트로 더 다양한 악기가 추가되진 않을겁니다. 만족하거든요.
 ```
 
-![image02](https://user-images.githubusercontent.com/74360958/123275435-490a4d80-d53f-11eb-8264-e35ac630d934.png)
-![image03](https://user-images.githubusercontent.com/74360958/123275487-51fb1f00-d53f-11eb-803f-b7b832b82086.png)
-![image04](https://user-images.githubusercontent.com/74360958/123275547-5e7f7780-d53f-11eb-9de2-f3ebbebfd479.png)
+![image08](https://user-images.githubusercontent.com/74360958/123275995-c33ad200-d53f-11eb-8706-3a0d36119937.png)
+![image09](https://user-images.githubusercontent.com/74360958/123276000-c3d36880-d53f-11eb-8de9-44be58ae5cb3.png)
+![image10](https://user-images.githubusercontent.com/74360958/123276001-c46bff00-d53f-11eb-9d2f-132fe872b8ee.png)
+![image11](https://user-images.githubusercontent.com/74360958/123276006-c46bff00-d53f-11eb-96f1-12e688fb1d0c.png)
+![image12](https://user-images.githubusercontent.com/74360958/123276009-c5049580-d53f-11eb-8c34-769e99211811.png)
 
 ```
 Keystrument는 사용자의 커스터마이징을 지원합니다.
