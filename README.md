@@ -36,8 +36,17 @@ Keystrument는 3가지 악기를 제공합니다.
   3. Keirum (Drum)
   
 이 세 가지 악기로 당신을 위한 연주를 시작하세요.
-추후 업데이트로 더 다양한 악기가 추가되진 않을겁니다. 학기는 끝났고 결과물은 만족해서요.
+추후 업데이트로 더 다양한 악기가 추가되진 않을겁니다. 만족하거든요.
 ```
+
+![image02](https://user-images.githubusercontent.com/74360958/123275435-490a4d80-d53f-11eb-8264-e35ac630d934.png)
+![image03](https://user-images.githubusercontent.com/74360958/123275487-51fb1f00-d53f-11eb-803f-b7b832b82086.png)
+![image04](https://user-images.githubusercontent.com/74360958/123275547-5e7f7780-d53f-11eb-9de2-f3ebbebfd479.png)
+
+```
+Keystrument는 사용자의 커스터마이징을 지원합니다.
+```
+
 
 ### 210430 ~ 210605 : Node.js
 
