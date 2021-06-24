@@ -10,7 +10,7 @@
 HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 기초
 ```
 
-### [Keystrument](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
+### [210422 : Keystrument](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
 
 
 고급웹프로그래밍 중간고사 개인 프로젝트 과제
@@ -78,7 +78,7 @@ https://www.pexels.com/ko-kr/video/5659545/
 Node.js를 이용한 백엔드 기초
 ```
 
-### [SHOPATKNU](https://github.com/bh2980/20211_WebProgramming/tree/main/KNU_WebPrograming_Team8)
+### [210614 : SHOPATKNU](https://github.com/bh2980/20211_WebProgramming/tree/main/KNU_WebPrograming_Team8)
 
 
 고급웹프로그래밍 기말 팀프로젝트
@@ -89,6 +89,11 @@ SHOPATKNU
 
 https://shop-at-knu.herokuapp.com/
 
-```
+<details>
+<summary>접기/펼치기 버튼</summary>
+<div markdown="1">
 
-```
+
+
+</div>
+</details>
