@@ -180,12 +180,14 @@ https://shop-at-knu.herokuapp.com/
 <p></p>
   
 - 프론트엔드
+  ![KakaoTalk_20210609_174513260_05](https://user-images.githubusercontent.com/74360958/123286743-22511480-d549-11eb-8f0b-bc065e0a563d.jpg)
+  
+  ![KakaoTalk_20210609_174513260_04](https://user-images.githubusercontent.com/74360958/123286742-22511480-d549-11eb-9007-6faabfe1f469.jpg)
+  
   ![KakaoTalk_20210609_174513260](https://user-images.githubusercontent.com/74360958/123286724-1feeba80-d549-11eb-83c6-4e01ce6cf7f7.jpg)
-![KakaoTalk_20210609_174513260_01](https://user-images.githubusercontent.com/74360958/123286736-211fe780-d549-11eb-8b86-c9287bf28303.jpg)
-![KakaoTalk_20210609_174513260_02](https://user-images.githubusercontent.com/74360958/123286737-21b87e00-d549-11eb-921e-92bcd517b7bb.jpg)
-![KakaoTalk_20210609_174513260_03](https://user-images.githubusercontent.com/74360958/123286739-21b87e00-d549-11eb-8906-c667b578ce75.jpg)
-![KakaoTalk_20210609_174513260_04](https://user-images.githubusercontent.com/74360958/123286742-22511480-d549-11eb-9007-6faabfe1f469.jpg)
-![KakaoTalk_20210609_174513260_05](https://user-images.githubusercontent.com/74360958/123286743-22511480-d549-11eb-8f0b-bc065e0a563d.jpg)
+  ![KakaoTalk_20210609_174513260_01](https://user-images.githubusercontent.com/74360958/123286736-211fe780-d549-11eb-8b86-c9287bf28303.jpg)
+
+
 
 - 백엔드
 
