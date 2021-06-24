@@ -16,6 +16,11 @@ HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 기초
 고급웹프로그래밍 중간고사 개인 프로젝트 과제
 
 
+<details>
+<summary>접기/펼치기 버튼</summary>
+<div markdown="1">
+
+
 >![image01](https://user-images.githubusercontent.com/74360958/123272379-a81a9300-d53c-11eb-812d-c851ca0b9fa3.jpg)
 
 ```
@@ -62,6 +67,12 @@ https://www.pexels.com/ko-kr/video/853767/
 https://www.pexels.com/ko-kr/video/5659545/
 ```
 
+
+</div>
+</details>
+
+
+
 ### [210430 ~ 210605 : Node.js]
 
 ```
@@ -82,15 +93,3 @@ https://shop-at-knu.herokuapp.com/
 ```
 
 ```
-
-<details>
-<summary>접기/펼치기 버튼</summary>
-<div markdown="1">
-
-|제목|내용|
-|--|--|
-|1|1|
-|2|10|
-
-</div>
-</details>
