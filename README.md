@@ -39,6 +39,7 @@ Keystrument는 3가지 악기를 제공합니다.
 추후 업데이트로 더 다양한 악기가 추가되진 않을겁니다. 만족하거든요.
 ```
 ![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
+![image14](https://user-images.githubusercontent.com/74360958/123276945-9f2bc080-d540-11eb-88bf-e4f1c3e6e388.png)
 ![image13](https://user-images.githubusercontent.com/74360958/123276246-f67d6100-d53f-11eb-9529-83101c333c06.png)
 
 
