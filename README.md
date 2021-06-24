@@ -38,8 +38,7 @@ Keystrument는 3가지 악기를 제공합니다.
 이 세 가지 악기로 당신을 위한 연주를 시작하세요.
 추후 업데이트로 더 다양한 악기가 추가되진 않을겁니다. 만족하거든요.
 ```
-![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
-![image14](https://user-images.githubusercontent.com/74360958/123276945-9f2bc080-d540-11eb-88bf-e4f1c3e6e388.png)
+>![image14](https://user-images.githubusercontent.com/74360958/123276945-9f2bc080-d540-11eb-88bf-e4f1c3e6e388.png)
 ![image13](https://user-images.githubusercontent.com/74360958/123276246-f67d6100-d53f-11eb-9529-83101c333c06.png)
 
 
@@ -48,6 +47,10 @@ Keystrument는 사용자의 커스터마이징을 지원합니다.
 키보드 레이아웃은 물론 효과 및 효과의 색상, 키별 소리까지 사용자가 원하는대로 바꿀 수 있습니다.
 ```
 
+>![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
+
+```
+```
 
 ### 210430 ~ 210605 : Node.js
 
