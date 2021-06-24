@@ -15,8 +15,7 @@ HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 개발 기초 �
 >![image01](https://user-images.githubusercontent.com/74360958/123272379-a81a9300-d53c-11eb-812d-c851ca0b9fa3.jpg)
 >Keystrument
 
-
-
+```
 아이패드에서 피아노를 연주하는 어플을 본 적 있나요?
 
 태블릿PC의 보급률이 높다하여도 PC의 보급율에는 미치지 못합니다.
@@ -24,6 +23,7 @@ HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 개발 기초 �
 Keystrument는 컴퓨터만 있다면 악기를 연주할 수 있게 만들어줍니다.
 
 연주하세요, 키보드 위에서.
+```
 
 ![image02](https://user-images.githubusercontent.com/74360958/123273146-57576a00-d53d-11eb-9d42-03310301fbe3.png)
 ![image03](https://user-images.githubusercontent.com/74360958/123273206-663e1c80-d53d-11eb-9bba-d0d6388289a2.png)
@@ -31,7 +31,7 @@ Keystrument는 컴퓨터만 있다면 악기를 연주할 수 있게 만들어�
 
 ```
 Keystrument는 3가지 악기를 제공합니다.
-키아노, 키타, 키럼으로 당신의 연주를 들려주세요.
+Keiano, Kitar, Kirum으로 당신의 연주를 들려주세요.
 ```
 
 ### 210430 ~ 210605 : Node.js
