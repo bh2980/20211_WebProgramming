@@ -94,7 +94,8 @@ https://shop-at-knu.herokuapp.com/
 <summary>접기/펼치기 버튼</summary>
 <div markdown="1">
 
-
+- 프론트엔드
+- 백엔드
 
 </div>
 </details>
