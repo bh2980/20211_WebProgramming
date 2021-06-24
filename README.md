@@ -4,7 +4,7 @@
 참고 : [스파르타 코딩 클럽](https://github.com/bh2980/SpartaCordeiClub/)
 
 
-### 210313 ~ 210408 : Front-end 기초
+### [210313 ~ 210408 : Front-end 기초]
 
 ```
 HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 기초
@@ -62,7 +62,7 @@ https://www.pexels.com/ko-kr/video/853767/
 https://www.pexels.com/ko-kr/video/5659545/
 ```
 
-### 210430 ~ 210605 : Node.js
+### [210430 ~ 210605 : Node.js]
 
 ```
 Node.js를 이용한 백엔드 기초
