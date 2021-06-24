@@ -12,6 +12,7 @@ HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 기초
 
 ### [210422 : Keystrument](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
 
+![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
 
 고급웹프로그래밍 중간고사 개인 프로젝트 과제
 
@@ -55,8 +56,6 @@ Keystrument는 사용자의 커스터마이징을 지원합니다.
 키보드 레이아웃은 물론 효과 및 효과의 색상, 키별 소리까지 사용자가 원하는대로 바꿀 수 있습니다.
 키보드로 나만의 악기를 만들어보세요.
 ```
-
->![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
 ```
 동영상 출처 :
 
