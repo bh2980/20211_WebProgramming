@@ -10,7 +10,11 @@
 HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 기초
 ```
 
-### [210422 : 중간 개인프로젝트](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
+### [Keystrument](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
+
+
+고급웹프로그래밍 중간고사 개인 프로젝트 과제
+
 
 >![image01](https://user-images.githubusercontent.com/74360958/123272379-a81a9300-d53c-11eb-812d-c851ca0b9fa3.jpg)
 
