@@ -7,7 +7,7 @@
 ### 210313 ~ 210408 : Front-end 기초
 
 ```
-HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 개발 기초 파트
+HTML, CSS, 자바스크립트, Jquery를 통한 프론트앤드 기초
 ```
 
 ### [210422 : 중간 개인프로젝트](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
@@ -50,10 +50,8 @@ Keystrument는 사용자의 커스터마이징을 지원합니다.
 
 >![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
 ```
-출처
+동영상 출처 :
 
-
-동영상:
 https://www.pexels.com/ko-kr/video/2022395/
 https://www.pexels.com/ko-kr/video/2306150/
 https://www.pexels.com/ko-kr/video/853767/
@@ -62,12 +60,8 @@ https://www.pexels.com/ko-kr/video/5659545/
 
 ### 210430 ~ 210605 : Node.js
 
->Keystrument
-
-HTML, CSS, 자바스크립트, Jquery를 이용하여 웹페이지를 기획하고 개발한다.
-
-```
-
+````
+Node.js를 이용한 백엔드 기초
 ```
 
 ### [KNU WebProgrammung Team8 : 기말 팀프로젝트](https://github.com/bh2980/20211_WebProgramming/tree/main/KNU_WebPrograming_Team8)
