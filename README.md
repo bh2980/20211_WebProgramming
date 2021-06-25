@@ -90,7 +90,7 @@ CSS 활용 과제
 ### [210408 : 과제5](https://github.com/bh2980/20211_WebProgramming/tree/main/210408)
 
 ```
-자바스크립트 활용 과제
+자바스크립트, Jquery 활용 과제
 ```
 
 ### [210422 : Keystrument](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
