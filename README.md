@@ -199,7 +199,7 @@ Node.js 교과서 책 독학 예제
 
 ### [210614 : SHOPATKNU](https://github.com/bh2980/20211_WebProgramming/tree/main/KNU_WebPrograming_Team8)
 
-> ![Shop at KNU - Chrome 2021-06-24 오후 11_26_50](https://user-images.githubusercontent.com/74360958/123280628-e8c9da80-d543-11eb-8d9e-ac2abf09cbac.png)
+> ![녹화_2021_06_26_00_53_04_400_1](https://user-images.githubusercontent.com/74360958/123453791-d1a9ec00-d61a-11eb-93f5-46d57a63fef6.gif)
 https://shop-at-knu.herokuapp.com/
 
 고급웹프로그래밍 기말 팀프로젝트 : SHOPATKNU
