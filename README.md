@@ -243,6 +243,8 @@ https://shop-at-knu.herokuapp.com/
   
 - 프론트엔드
     
+HTML, CSS, JavaScript, Jquery
+    
 ![그림1](https://user-images.githubusercontent.com/74360958/123456774-30bd3000-d61e-11eb-9b5e-92874787b31f.png)
 
 - 백엔드
