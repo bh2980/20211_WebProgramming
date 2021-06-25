@@ -7,20 +7,32 @@
 ### [210313 : HTML 기초](https://github.com/bh2980/20211_WebProgramming/tree/main/210313)
 
 ```
-
 HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것을 권장.
 
 스페이스바나 엔터, 탭 같은 값은 인식하지 않기 때문에 별도의 특수문자를 사용해아함.
 
 주석 <!-- -->로 표기
 
-h태그 : h1 ~ h6로 나뉨, 중요도 순서
-p태그 : paragraph 태그. 문단 태그
+<h~> : h1 ~ h6로 나뉨, 중요도 순서
+<p> : paragraph 태그. 문단 태그
 
 - 레이아웃 태그
 
-header, nav, section, artical, aside, footer 태그
+<header>, <nav>, <section>, <artical>, <aside>, <footer> 태그
 
+- 기본 태그
+<pre> : 사이에 적은 글자를 있는 그대로 표시해줌
+<a> : 하이퍼링크 태그, href="" 속성으로 링크 이동, name과 id 속성으로 문저 내의 특정 위치로 이동 가능
+<ul> - <li> : 무순서 목록 + 목록 아이템 태그, list-style-type으로 스타일 지정 가능
+<table> :
+    <tr> : 행 생성
+    <td> : 열 생성
+    <th> : 표의 헤더태그
+<img> : 이미지 파일 삽입
+<video> : 비디오 파일 삽입
+<audio> : 오디오 파일 삽입
+
+이외 <object>, <embed> 태그 사용 가능
 ```
 
 ### [210316 : HTML & CSS](https://github.com/bh2980/20211_WebProgramming/tree/main/210316)
