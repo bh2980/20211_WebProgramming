@@ -7,14 +7,6 @@
 ### [210313 : 과제1](https://github.com/bh2980/20211_WebProgramming/tree/main/210313)
 
 ```
-index.html : h태그 및 li, a 태그 사용 예제
-index2.html : table 표 태그 사용 예제
-index3.html : table, img 태그 사용 예제
-index4.html : pre 태그 사용 예제 
-index5.html : audio 태그 사용 예제
-
--------------------------------------------------------------------------------
-
 HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것을 권장.
 
 스페이스바나 엔터, 탭 같은 값은 인식하지 않기 때문에 별도의 특수문자를 사용해아함.
@@ -47,15 +39,6 @@ HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것
 ### [210316 : HTML & CSS](https://github.com/bh2980/20211_WebProgramming/tree/main/210316)
 
 ```
-buttoon.html, html.html : GET 타입 예제
-post.html : POST타입 예제
-list.html : 입력 양식 예제
-hello.html : iframe 태그 사용 예제
-passport.html : input 태그 사용 예제
-css.html, test.css : 외부, 내부 스타일시트 사용 예제
-
-------------------------------------------------------------------------------
-
 입력 양식 요소
 
 <form> 태그 method로 전송 방식 선택
