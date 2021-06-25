@@ -39,7 +39,15 @@ HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것
 ### [210316 : HTML & CSS](https://github.com/bh2980/20211_WebProgramming/tree/main/210316)
 
 ```
+입력 양식 요소
 
+<form> 태그 
+
+- GET
+    GET 방식은 전송되는 정보를 URL에 그대로 표기한 상태로 전송
+    
+-POST
+    POST 방식은 전송되는 request의 body에 포함시켜 전송, URL에 표기되지 않기 때문에 보안상 더욱 안전
 ```
 
 ### [210318 : 과제1](https://github.com/bh2980/20211_WebProgramming/tree/main/210318)
