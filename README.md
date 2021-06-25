@@ -95,7 +95,7 @@ CSS 활용 과제
 
 ### [210422 : Keystrument](https://github.com/bh2980/20211_WebProgramming/tree/main/210422_middle_test/piano)
 
->![image03](https://user-images.githubusercontent.com/74360958/123276371-13199900-d540-11eb-81c6-714c014b6a19.png)
+>![녹화_2021_06_26_00_35_32_437_1](https://user-images.githubusercontent.com/74360958/123451697-b5a54b00-d618-11eb-905c-7f51b5e8f0a3.gif)
 
 고급웹프로그래밍 중간고사 개인 프로젝트 과제
 
