@@ -189,12 +189,21 @@ express에서는 메인으로 설정된 app.js 코드를 위에서부터 순차�
 
 사용자가 서버에 request(요청)를 전송하면 서버에서 요청을 해석하여 사용자가 입력한 값이나 요청 주소를 확인하고
 요청에 대한 처리 후 response(응답)으로 돌려준다.
+이때 <form>태그와 GET, POST 방식을 사용하여 서버에 값을 전송할 수 있다.
 ```
 
 ### [210603 : 기말 팀프로젝트1](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
 
 ```
+Node.js와 MongoDB 연동
 
+mongoose는 mongoDB와의 연결 전에 스키마를 이용하여 정해진 데이터 형식만을 입력받도록 도와준다.
+
+mongoose.model('Lecture', LectureSchema);
+
+첫번째 인자를 컬렉션 이름으로 받는다.  
+이때 첫글자 소문자로 바꾸고 복수형으로 변경하여 컬렉션의 이름을 인식한다.(없으면 생성한다.)
+즉, 위의 코드는 첫번째 인자가 'Lecture'이므로 lectureSchema가 collection 중 lectures와 연결된다.
 ```
 
 ### [210605 : 기말 팀프로젝트2](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
