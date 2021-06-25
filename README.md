@@ -211,6 +211,7 @@ mongoose.model('Lecture', LectureSchema);
 이때 첫글자 소문자로 바꾸고 복수형으로 변경하여 컬렉션의 이름을 인식한다.(없으면 생성한다.)
 즉, 위의 코드는 첫번째 인자가 'Lecture'이므로 lectureSchema가 collection 중 lectures와 연결된다.
 
+findOne이나 save 같은 mongoDB 함수를 이용하여 mongoDB를 검색, 수정, 저장할 수 있다.
 ```
 
 ### [210605 : 기말 팀프로젝트2](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
