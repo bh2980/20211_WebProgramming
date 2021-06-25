@@ -250,6 +250,10 @@ HTML, CSS, JavaScript, Jquery
 - 백엔드
  
  Python - Web Crawling, node.js, MongoDB
+    
+ ![그림1](https://user-images.githubusercontent.com/74360958/123457740-3109fb00-d61f-11eb-9be3-d7aa0557addf.png)
+
+    
  ```
  참고 사이트
     
