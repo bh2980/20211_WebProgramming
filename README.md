@@ -47,6 +47,15 @@ HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것
 ### [210316 : HTML & CSS](https://github.com/bh2980/20211_WebProgramming/tree/main/210316)
 
 ```
+buttoon.html, html.html : GET 타입 예제
+post.html : POST타입 예제
+list.html : 입력 양식 예제
+hello.html : iframe 태그 사용 예제
+passport.html : input 태그 사용 예제
+css.html, test.css : 외부, 내부 스타일시트 사용 예제
+
+------------------------------------------------------------------------------
+
 입력 양식 요소
 
 <form> 태그 method로 전송 방식 선택
@@ -62,13 +71,13 @@ HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것
 ### [210318 : 과제2](https://github.com/bh2980/20211_WebProgramming/tree/main/210318)
 
 ```
-
+두번째 과제
 ```
 
 ### [210319 : 생활코딩](https://github.com/bh2980/20211_WebProgramming/tree/main/210319)
 
 ```
-
+생활코딩 책의 HTML, CSS 기초 연습 
 ```
 
 ### [210323 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210323)
