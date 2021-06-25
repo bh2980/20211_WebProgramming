@@ -176,6 +176,8 @@ MongoDB 설치 및 mongoose를 이용한 node.js와 mongodb 연동
 ### [210517 : 기말 프로젝트용 Web Crawling 파일](https://github.com/bh2980/20211_WebProgramming/tree/main/210517)
 
 ```
+- DB 준비
+
 경북대학교의 강의계획서를 크롤링하여 이 파일을 MongoDB에 업로드하는 파일
 ```
 
@@ -200,6 +202,8 @@ express에서는 메인으로 설정된 app.js 코드를 위에서부터 순차�
 <% %>이나 <%= %> 태그를 사용하여 ejs 문법을 사용할 수 있다.
 <% 는 for과 같은 함수가 들어가고 <%= 에서는 변수가 들어간다.
 서버에서 변수에 값을 담아 보내주면 ejs 템플릿에서 받아 화면에 나타내준다.
+
+<%- include('layouts/header'); -%> 코드를 사용하여 공통적으로 들어가는 부분을 각 ejs 파일들에 인클루드 시켜 나타낼 수 있다.
 
 - Node.js와 MongoDB 연동
 
