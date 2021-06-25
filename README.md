@@ -176,7 +176,7 @@ MongoDB 설치 및 mongoose를 이용한 node.js와 mongodb 연동
 ### [210517 : 기말 프로젝트용 Web Crawling 파일](https://github.com/bh2980/20211_WebProgramming/tree/main/210517)
 
 ```
-
+경북대학교의 강의계획서를 크롤링하여 이 파일을 MongoDB에 업로드하는 파일
 ```
 
 ### [210531 : Node.js 교과서](https://github.com/bh2980/20211_WebProgramming/tree/main/210531)
