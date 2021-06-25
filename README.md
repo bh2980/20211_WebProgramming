@@ -178,7 +178,9 @@ MongoDB 설치 및 mongoose를 이용한 node.js와 mongodb 연동
 ```
 - DB 준비
 
-경북대학교의 강의계획서를 크롤링하여 이 파일을 MongoDB에 업로드하는 파일
+python으로 크롤링 코드를 작성하여 각 단과대학 별로 링크를 변경해가며 단과대의 개설 과목을 크롤링한다.
+과목 정보는 로딩 시 받아오는 정보이기 때문에 selenium을 활용하여 동적 크롤링한다.
+받은 과목을 mongoDB로 전송하여 과목 데이터베이스를 만든다.
 ```
 
 ### [210531 : Node.js 교과서](https://github.com/bh2980/20211_WebProgramming/tree/main/210531)
