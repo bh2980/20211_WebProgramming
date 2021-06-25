@@ -195,15 +195,22 @@ express에서는 메인으로 설정된 app.js 코드를 위에서부터 순차�
 ### [210603 : 기말 팀프로젝트1](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
 
 ```
-Node.js와 MongoDB 연동
+- ejs 템플릿 사용
+
+<% %>이나 <%= %> 태그를 사용하여 ejs 문법을 사용할 수 있다.
+<% 는 for과 같은 함수가 들어가고 <%= 에서는 변수가 들어간다.
+서버에서 변수에 값을 담아 보내주면 ejs 템플릿에서 받아 화면에 나타내준다.
+
+- Node.js와 MongoDB 연동
 
 mongoose는 mongoDB와의 연결 전에 스키마를 이용하여 정해진 데이터 형식만을 입력받도록 도와준다.
 
 mongoose.model('Lecture', LectureSchema);
 
-첫번째 인자를 컬렉션 이름으로 받는다.  
+이 코드는 첫번째 인자를 컬렉션 이름으로 받는다.  
 이때 첫글자 소문자로 바꾸고 복수형으로 변경하여 컬렉션의 이름을 인식한다.(없으면 생성한다.)
 즉, 위의 코드는 첫번째 인자가 'Lecture'이므로 lectureSchema가 collection 중 lectures와 연결된다.
+
 ```
 
 ### [210605 : 기말 팀프로젝트2](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
