@@ -221,7 +221,20 @@ findOne이나 save 같은 mongoDB 함수를 이용하여 mongoDB를 검색, 수�
 ### [210605 : 기말 팀프로젝트2](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
 
 ```
+a태그나 button 태그를 통해서도 서버에 값을 전송할 수 있다.
+이 경우 GET 방식을 통해 이루어진다.
 
+<a href="/detail?lec_num=<%= lectures[i].lec_num %>"...코드를 예시로 들면
+href뒤의 /detail 주소를 서버로 요청하고 이때 ?뒤에 query값을 담아서 전송한다(=GET 방식)
+
+서버에서는 
+
+router.get('/:lec_num', function(req, res, next) {
+    //query ? params /
+    const lec_num = req.params.lec_num;
+    ...
+    
+과 같은 코드를 사용해서 파라미터 값을 받는다.
 ```
 
 ### [210614 : SHOPATKNU](https://github.com/bh2980/20211_WebProgramming/tree/main/KNU_WebPrograming_Team8)
@@ -249,7 +262,7 @@ HTML, CSS, JavaScript, Jquery
 
 - 백엔드
  
- Python - Web Crawling, node.js, MongoDB
+ Web Crawling(Python), node.js, MongoDB, Heroku
     
  ![그림1](https://user-images.githubusercontent.com/74360958/123457740-3109fb00-d61f-11eb-9be3-d7aa0557addf.png)
 
