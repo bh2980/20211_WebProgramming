@@ -4,9 +4,17 @@
 참고 : [스파르타 코딩 클럽](https://github.com/bh2980/SpartaCordeiClub/)
 
 
-### [210313 : HTML 기초](https://github.com/bh2980/20211_WebProgramming/tree/main/210313)
+### [210313 : 과제1](https://github.com/bh2980/20211_WebProgramming/tree/main/210313)
 
 ```
+index.html : h태그 및 li, a 태그 사용 예제
+index2.html : table 표 태그 사용 예제
+index3.html : table, img 태그 사용 예제
+index4.html : pre 태그 사용 예제 
+index5.html : audio 태그 사용 예제
+
+-------------------------------------------------------------------------------
+
 HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것을 권장.
 
 스페이스바나 엔터, 탭 같은 값은 인식하지 않기 때문에 별도의 특수문자를 사용해아함.
@@ -41,16 +49,17 @@ HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것
 ```
 입력 양식 요소
 
-<form> 태그 
+<form> 태그 method로 전송 방식 선택
 
 - GET
-    GET 방식은 전송되는 정보를 URL에 그대로 표기한 상태로 전송
+    GET 방식은 전송되는 정보를 URL에 그대로 표기한 상태로 전송, name 태그로 전송하는 값의 title 설정
     
 -POST
     POST 방식은 전송되는 request의 body에 포함시켜 전송, URL에 표기되지 않기 때문에 보안상 더욱 안전
+    
 ```
 
-### [210318 : 과제1](https://github.com/bh2980/20211_WebProgramming/tree/main/210318)
+### [210318 : 과제2](https://github.com/bh2980/20211_WebProgramming/tree/main/210318)
 
 ```
 
