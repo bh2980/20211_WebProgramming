@@ -182,7 +182,7 @@ MongoDB 설치 및 mongoose를 이용한 node.js와 mongodb 연동
 ### [210531 : Node.js 교과서](https://github.com/bh2980/20211_WebProgramming/tree/main/210531)
 
 ```
-Node.js 교과서 책 독학 예제
+Node.js 교과서 책 예제
 
 express에서는 메인으로 설정된 app.js 코드를 위에서부터 순차적으로 실행시켜가며 진행한다.
 해당하는 주소가 들어왔을 때 router(middleware)에 걸려서 해당하는 처리가 들어가게 된다.
