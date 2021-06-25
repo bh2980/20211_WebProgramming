@@ -1,7 +1,6 @@
 {
   "name": "210430",
   "version": "1.0.0",
-  "description": "",
   "main": "text.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "multiparty": "^4.2.2"
-  }
+    "multiparty": "^4.2.2",
+    "util": "^0.12.4",
+    "utl": "0.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
 }

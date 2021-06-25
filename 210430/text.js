@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var numtiparty = require('multiparty');
+var multiparty = require('multiparty');
 var format = require('util').format;
 
 app.get('/', function(req, res) {
