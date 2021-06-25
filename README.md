@@ -155,43 +155,43 @@ https://www.pexels.com/ko-kr/video/5659545/
 </details>
 
 
-### [210430 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210430)
+### [210430 : node.js 시작](https://github.com/bh2980/20211_WebProgramming/tree/main/210430)
+
+```
+node.js 설치 및 시작
+```
+
+### [210507 : 부트스트랩과 express를 이용한 블로그 활용 예제](https://github.com/bh2980/20211_WebProgramming/tree/main/210507)
+
+```
+CleanBlog 부트 스트랩 파일을 이용한 ejs 연습 및 블로그 서비스 기획
+```
+
+### [210510 : Mongoose를 이용한 MongoDB 연동](https://github.com/bh2980/20211_WebProgramming/tree/main/210510)
+
+```
+MongoDB 설치 및 mongoose를 이용한 node.js와 mongodb 연동
+```
+
+### [210517 : 기말 프로젝트용 Web Crawling 파일](https://github.com/bh2980/20211_WebProgramming/tree/main/210517)
 
 ```
 
 ```
 
-### [210507 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210507)
+### [210531 : Node.js 교과서](https://github.com/bh2980/20211_WebProgramming/tree/main/210531)
+
+```
+Node.js 교과서 책 독학 예제
+```
+
+### [210603 : 기말 팀프로젝트1](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
 
 ```
 
 ```
 
-### [210510 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210510)
-
-```
-
-```
-
-### [210517 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210517)
-
-```
-
-```
-
-### [210531 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210531)
-
-```
-
-```
-
-### [210603 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
-
-```
-
-```
-
-### [210605 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
+### [210605 : 기말 팀프로젝트2](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
 
 ```
 
