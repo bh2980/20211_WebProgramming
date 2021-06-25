@@ -66,19 +66,19 @@ HTML 문서는 대소문자를 구별하지 않지만 소문자로 작성할 것
 ### [210323 : CSS](https://github.com/bh2980/20211_WebProgramming/tree/main/210323)
 
 ```
-가상 선택자 및 클래스 선택자 등 선택자 예제
+가상 선택자 및 클래스 선택자 등 CSS 선택자 예제
 ```
 
-### [210325 : 과제2](https://github.com/bh2980/20211_WebProgramming/tree/main/210325)
+### [210325 : 과제3](https://github.com/bh2980/20211_WebProgramming/tree/main/210325)
 
 ```
-
+html 및 css 활용 연습 과제
 ```
 
 ### [210325_2 : 생활코딩2](https://github.com/bh2980/20211_WebProgramming/tree/main/210325_2)
 
 ```
-
+생활코딩 책의 자바스크립트 파트 연습
 ```
 
 ### [210403 : ](https://github.com/bh2980/20211_WebProgramming/tree/main/210403)
