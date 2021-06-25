@@ -183,6 +183,12 @@ MongoDB 설치 및 mongoose를 이용한 node.js와 mongodb 연동
 
 ```
 Node.js 교과서 책 독학 예제
+
+express에서는 메인으로 설정된 app.js 코드를 위에서부터 순차적으로 실행시켜가며 진행한다.
+해당하는 주소가 들어왔을 때 router(middleware)에 걸려서 해당하는 처리가 들어가게 된다.
+
+사용자가 서버에 request(요청)를 전송하면 서버에서 요청을 해석하여 사용자가 입력한 값이나 요청 주소를 확인하고
+요청에 대한 처리 후 response(응답)으로 돌려준다.
 ```
 
 ### [210603 : 기말 팀프로젝트1](https://github.com/bh2980/20211_WebProgramming/tree/main/210603)
