@@ -173,16 +173,16 @@ CleanBlog 부트 스트랩 파일을 이용한 ejs 연습 및 블로그 서비�
 MongoDB 설치 및 mongoose를 이용한 node.js와 mongodb 연동
 ```
 
-### [210517 : 기말 프로젝트용 Web Crawling 파일](https://github.com/bh2980/20211_WebProgramming/tree/main/210517)
+### [210517 : 기말 프로젝트용 Web Scraping 파일](https://github.com/bh2980/20211_WebProgramming/tree/main/210517)
 
 ```
 - DB 준비
 
-python으로 크롤링 코드를 작성하여 각 단과대학 별로 링크를 변경해가며 단과대의 개설 과목을 크롤링한다.
-과목 정보는 로딩 시 받아오는 정보이기 때문에 selenium을 활용하여 동적 크롤링한다.
+python으로 스크래핑 코드를 작성하여 각 단과대학 별로 링크를 변경해가며 단과대의 개설 과목을 스크래핑한다.
+과목 정보는 로딩 시 받아오는 정보이기 때문에 selenium을 활용하여 동적 스크래핑한다.
 받은 과목을 mongoDB로 전송하여 과목 데이터베이스를 만든다.
 
-lectures.json -> 추후 mongoDB atlas 온라인 DB에 
+lectures.json -> 추후 mongoDB atlas 온라인 DB에 등록
 ```
 
 ### [210531 : Node.js 교과서](https://github.com/bh2980/20211_WebProgramming/tree/main/210531)
@@ -268,7 +268,7 @@ HTML, CSS, JavaScript, Jquery
 
 - 백엔드
  
- Web Crawling(Python), node.js, MongoDB, Heroku
+ Web Scraping(Python), node.js, MongoDB, Heroku
     
  ![그림1](https://user-images.githubusercontent.com/74360958/123457740-3109fb00-d61f-11eb-9be3-d7aa0557addf.png)
 
